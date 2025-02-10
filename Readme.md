@@ -1,8 +1,8 @@
 # SARVOTTAM LIBRARY 
-![librarylogo](./../image/home%20print.png)
+![librarylogo](.//image/home-print.png)
 ---
 ## A. Description
-<B>Sarvo Library is a public library serving the residents of  Our mission is to be a hub of knowledge, entertainment, and information for people of all ages and interests. We believe that education and reading empower individuals and communities, and we are committed to promoting this.
+<B>Sarvottam Library is a public library serving the residents of  Our mission is to be a hub of knowledge, entertainment, and information for people of all ages and interests. We believe that education and reading empower individuals and communities, and we are committed to promoting this.
 Our library houses a vast collection of over 20,000 books, ebooks, audiobooks, and periodicals. Our collection spans a wide range of subjects, including fiction, science, history, art, and children's literature. We are constantly expanding our collection and strive to add new and relevant materials.
 
 </B>
