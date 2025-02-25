@@ -1,23 +1,54 @@
+.logo {
+  border-radius: 50%;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle; /* something problem is here*/
+}
+#main-heading {
+  color: #313d46;
+  font-family: Aclonica;
+  display: inline-block;
+  vertical-align: middle;
+}
+.heading-color {
+  color: #313d46;
+}
 .navbar {
-    color: #00264d;
-    font-weight: bold;
+  margin: 40px 0;
+  padding: 25px 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  background-color: #313d46; /*95acf8fc */
+  word-spacing: 30px;
+  .open-nav {
+    color: #ffffff;
+  }
+  .closed-nav {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .closed-nav:hover {
+    color: yellow;
+  }
 }
 .nav-arrows-buttons {
-    background-color: #ccd9ff;
+  background-color: #ccd9ff;
+  color: #00264d;
+  padding: 5px 15px;
+  border: #00264d solid 0.5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px 0px #666666;
+  cursor: pointer;
 
-    padding: 5px 15px;
-    border:#00264d solid 0.5px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px 0px #666666;
-    cursor:pointer;
-}
-.nav-arrows-buttons:hover{
-transition:0.25s;
-border:#00264d solid 1px;
-margin-left:1px;
-box-shadow:2px 2px 5px 1px #666666;
-}
-.nav-arrows-icons {
+  .nav-arrows-icons {
     height: 30px;
     vertical-align: middle;
+  }
+}
+.nav-arrows-buttons:hover {
+  transition: 0.25s;
+  border: #00264d solid 1px;
+  margin-left: 1px;
+  box-shadow: 2px 2px 5px 1px #666666;
 }
