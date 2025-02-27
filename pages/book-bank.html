@@ -25,41 +25,63 @@
             color: greenyellow;
         }
 
+        .book-bank-main-image {
+            filter: drop-shadow(15px 10px 5px #ccc);
+            height: 250px;
+            text-align: center;
+        }
+
         .cards-box {
             background-color: #E8F8FD;
+            margin: 10px;
             padding: 10px 30px;
+            border: #313d46 0.5px solid;
+            border-radius: 5px;
             position: relative;
+            height: 350px;
 
-            .button-available-books {
-                padding: 5px 20px;
-                border-radius: 10px;
+            .available-books {
+                padding: 5px 10px;
+                border-radius: 5px;
                 background-color: #A1E3F9;
                 border: #313d46 0.5px solid;
                 color: #313d46;
+                text-align: center;
                 font-size: 20px;
                 font-weight: bold;
                 position: absolute;
-                left: 20px;
+                left: 42%;
+                right: 42%;
                 top: -20px;
 
-                .point-down-icon {
+                .books-stack-icon {
                     vertical-align: middle;
+                    height: 35px;
+                    margin-right: 7px;
                 }
             }
 
             .cards-book-bank {
                 background-color: #ffffff;
                 margin: 50px;
-                padding: 5px;
+                padding: 0px;
                 text-align: center;
                 width: 200px;
-                border: 1px solid #ccc;
+                border: 1px solid #313d46;
                 border-radius: 10px;
                 display: inline-block;
                 vertical-align: top;
                 box-shadow: -1px 3px 7px 1px #666666;
 
-                .cards-content-book-bank {
+                .cards-button {
+                    background-color: #313d46;
+                    color: #fff;
+                    font-weight: bold;
+                    padding: 20px 0px;
+                    border: none;
+                    border-radius: 0 0 7px 7px;
+                    cursor: pointer;
+                    width: 100%;
 
                     .cards-book-bank-heading {
                         text-decoration: none;
@@ -71,7 +93,7 @@
             }
         }
 
-        .cards:hover {
+        .cards-book-bank:hover {
             transition: 0.2s;
             box-shadow: -1px 3px 5px 1px #313d46;
             border: #313d46 0.5px solid;
@@ -82,6 +104,26 @@
             border-radius: 10px 10px 0 0;
 
             background: linear-gradient(180deg, rgba(255, 255, 255, 1) 4%, rgba(232, 248, 253, 1) 35%, rgba(54, 116, 181, 1) 100%);
+        }
+
+        .card-11-position {
+            position: absolute;
+            left: 0;
+        }
+
+        .card-12-position {
+            position: absolute;
+            left: 400px;
+        }
+
+        .card-jee-position {
+            position: absolute;
+            right: 400px;
+        }
+
+        .card-neet-position {
+            position: absolute;
+            right: 0;
         }
     </style>
 </head>
@@ -99,9 +141,9 @@
     </div>
     <img src="./../image/Icons/book-bank.png" height="40px" alt="Book Bank Icon" />
     <h1 class="heading-color">BOOK BANK </h1>
-    <p>
-        <img src="./../image/photos/main-book-bank.jpg" height="300px" alt="Book Bank Photo" />
-    </p>
+    <div class="book-bank-main-image">
+        <img src="./../image/photos/main-book-bank-image-2.png" height="200px" alt="Book Bank Photo" />
+    </div>
 
     <p><b>Borrow textbooks and reference materials for an entire semester to support your academic journey.</b></p>
     <div>
@@ -113,32 +155,34 @@
             that all students, especially those in need, have access to essential study resources.<br /><br />
         </p>
         <div class="cards-box">
-            <button class="button-available-books">Available Books! <img src="./../image/icons/point-down.png"
-                    alt="Point Down Icon" class="point-down-icon" /></button>
-
-            <div class="cards-book-bank">
+            <span class="available-books">
+                <img src="./../image/icons/books-stack-icon.png" alt="Books Stack Icon" class="books-stack-icon" />
+                Available Books!
+            </span>
+            <div class="cards-book-bank card-11-position">
                 <img src="./../image/photos/card-photo-11.png" alt="11th std photo" class="cards-photos-book-bank" />
-                <p class="cards-content-book-bank">
-                    <a href="./class-11.html" class="cards-book-bank-heading">CLASS 11</a>
-                </p>
+                <a href="./class-11.html" class="cards-book-bank-heading">
+                    <button class="cards-button">CLASS 11</button>
+                </a>
             </div>
-            <div class="cards-book-bank">
+            <div class="cards-book-bank card-12-position">
                 <img src="./../image/photos/card-photo-12.png" alt="12th std photo" class="cards-photos-book-bank" />
-                <p class="cards-content-book-bank">
-                    <a href="./class-12.html" class="cards-book-bank-heading">CLASS 12</a>
-                </p>
+                <a href="./class-12.html" class="cards-book-bank-heading">
+                    <button class="cards-button">CLASS 12</button>
+                </a>
             </div>
-            <div class="cards-book-bank">
+            <div class="cards-book-bank card-jee-position">
                 <img src="./../image/photos/card-photo-jeeee.png" alt="JEE photo" class="cards-photos-book-bank" />
-                <p class="cards-content-book-bank">
-                    <a href="./jee.html" class="cards-book-bank-heading">JEE Preparatory</a>
-                </p>
+
+                <a href="./jee.html" class="cards-book-bank-heading">
+                    <button class="cards-button">JEE Preparatory</button>
+                </a>
             </div>
-            <div class="cards-book-bank">
+            <div class="cards-book-bank card-neet-position">
                 <img src="./../image/photos/card-photo-neet.png" alt="NEET photo" class="cards-photos-book-bank" />
-                <p class="cards-content-book-bank">
-                    <a href="./neet.html" class="cards-book-bank-heading">NEET Preparatory</a>
-                </p>
+                <a href="./neet.html" class="cards-book-bank-heading">
+                    <button class="cards-button">NEET Preparatory</button>
+                </a>
             </div>
         </div>
 
