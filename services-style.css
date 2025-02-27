@@ -2,25 +2,27 @@
   border-radius: 50%;
   margin: auto;
   display: inline-block;
-  vertical-align: middle; /* something problem is here*/
+  vertical-align: middle;
 }
 #main-heading {
   color: #313d46;
   font-family: Aclonica;
+  font-size:xx-large;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: middle;text-align: center;
 }
 .heading-color {
   color: #313d46;
 }
 .navbar {
-  margin: 40px 0;
-  padding: 25px 30px;
+  margin: 0 0 40px 0;
+  padding: 25px 0 25px 0;
   text-align: center;
   font-weight: bold;
   font-size: large;
   background-color: #313d46; /*95acf8fc */
   word-spacing: 30px;
+  position: relative;
   .open-nav {
     color: #ffffff;
   }

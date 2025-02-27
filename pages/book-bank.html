@@ -8,24 +8,113 @@
     <title>Book Bank</title>
     <link rel="stylesheet" href="./../services-style.css" />
     <style>
-        .logo {
+        .service-logo {
+            height: 50px;
             border-radius: 50%;
-            display: block;
-            margin: auto;
+            position: relative;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: 12.5px;
+            margin-left: 12.5px;
+        }
+
+        #library-name-service {
+            position: absolute;
+            right: 10px;
+        }
+
+        .cards-box {
+            background-color: #d2e9fa;
+        }
+
+        .cards {
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 5px;
+            text-align: center;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: -1px 3px 7px 1px #666666;
+
+            .cards-book-bank-content {
+                
+
+                .cards-book-bank-heading {text-decoration: none;
+                color: #313d46;
+                font-weight: bold;
+                }
+
+            }
+        }
+
+        .cards:hover {
+            transition: 0.25s;
+            box-shadow: -1px 3px 5px 1px #313d46;
+        }
+
+        .cards-photos-book-bank {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
         }
     </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
 
 <body>
-    <img class="logo" src="./../image/main-library-logo1.webp" height="70px" alt="Library Logo" /><br />
 
-    <h2 class="heading-color">BOOK BANK </h2>
+    <div class="navbar">
+        <img class="service-logo" src="./../image/main-library-logo1.webp" alt="Library Service Logo" />
+        <p id="library-name-service">SARVOTTAM LIBRARY</p>
+        <a href="./book-lending.html" class="closed-nav">BOOK-LENDING</a>
+        <a href="./membership.html" class="closed-nav">MEMBERSHIP</a>
+        <a href="./book-bank.html" class="open-nav">BOOK-BANK</a>
+        <a href="./photocopying.html" class="closed-nav">PHOTOCOPYING</a>
+    </div>
+    <br />
+    <pre>
+    1.Back to Service 2.membership 3.book-lending 4.photocopying 
+</pre>
+    <h1 class="heading-color">BOOK BANK </h1>
     <img src="./../image/Icons/book-bank.png" height="40px" alt="Book Bank Icon" />
-    <h3>Borrow textbooks and reference materials for an entire semester to support your academic journey.</h3>
+    <pre>
+        check books
+        11th    12th
+    </pre>
+    <div class="cards-box">
+        <div class="cards">
+            <img src="./../image/photos/card-photo-11.webp" alt="11th std photo" class="cards-photos-book-bank" />
+            <p class="cards-book-bank-content">
+                <a href="./class-11.html" class="cards-book-bank-heading">CLASS 11</a>
+            </p>
+        </div>
+        <div class="cards">
+            <img src="./../image/photos/card-photo-12.webp" alt="12th std photo" class="cards-photos-book-bank" />
+            <p class="cards-book-bank-content">
+                <a href="./class-12.html" class="cards-book-bank-heading">CLASS 12</a>
+            </p>
+        </div>
+        <div class="cards">
+            <img src="./../image/photos/card-photo-jee.webp" alt="JEE photo" class="cards-photos-book-bank" />
+            <p class="cards-book-bank-content">
+                <a href="./jee.html" class="cards-book-bank-heading">JEE Preparatory</a>
+            </p>
+        </div>
+        <div class="cards">
+            <img src="./../image/photos/card-photo-neet.webp" alt="NEET photo" class="cards-photos-book-bank" />
+            <p class="cards-book-bank-content">
+                <a href="./neet.html" class="cards-book-bank-heading">NEET Preparatory</a>
+            </p>
+        </div>
+    </div>
+    <p><b>Borrow textbooks and reference materials for an entire semester to support your academic journey.</b></p>
     <div>
         <p>
-            Our Library maintains a book bank mainly of undergraduate level text books to help students belonging to
+            Our Library maintains a book bank mainly of 11<sup>th</sup> and 12<sup>th</sup> standard text books to help
+            students belonging to
             economically and socially weaker section of the society. The Book Bank Service provides long-term lending of
             textbooks and academic materials to students for an entire semester or academic year. This service ensures
             that all students, especially those in need, have access to essential study resources.
@@ -35,17 +124,17 @@
         </p>
 
         <p>
-        <h3><u>Who can use the Book Bank?</u></h3>
+        <h2><u>Who can use the Book Bank?</u></h2>
 
         <ul>
             <li>Registered students of the institution</li> <br />
             <li>Priority for economically disadvantaged students (if applicable)</li> <br />
-            <li>Members with an active library membership</li> <br />
+            <li>Members (Students) with an active library membership</li> <br />
         </ul>
         </p>
         <hr />
         <p>
-        <h3><u>How It Works</u></h3>
+        <h2><u>How It Works</u></h2>
 
         <ol>
             <li><b>Register for the Service:</b> Visit the library and fill out the application form. </li> <br />
@@ -58,7 +147,7 @@
         <hr />
         </p>
         <p>
-        <h3><u>Book Bank Policies</u></h3>
+        <h2><u>Book Bank Policies</u></h2>
 
         <ul>
             <li><b>Loan Duration:</b> Full semester or academic year</li> <br />
@@ -71,7 +160,7 @@
         </p>
         <hr />
     </div>
-    <br/>
+    <br />
     <a href="#top">
         <button class="nav-arrows-buttons">
             <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="nav-arrows-icons" />
