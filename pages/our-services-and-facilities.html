@@ -14,6 +14,31 @@
         h2 {
             color: #00264d;
         }
+
+        .arrows-buttons-container {
+            margin: 50px 0 60px 0;
+            position: relative;
+
+            .arrows-up-icons {
+                height: 30px;
+                position: absolute;
+                left: 47%;
+                right: 47%;
+                bottom: 0;
+            }
+
+            .button-previous {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+            .button-next {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
     </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
@@ -141,27 +166,23 @@
             <source src="./../videos/library-benifits.mp4" type="video/mp4" />
         </video>
     </div>
+    <div class="arrows-buttons-container">
+        <a href="catalog.html">
+            <button class="arrows-buttons button-previous">
+                <img src="./../image/icons/arrow-left.png" alt="Arrow Back" class="arrows-icons" /> PREVIOUS
+            </button>
+        </a>
 
-    <a href="catalog.html">
-        <button class="nav-arrows-buttons">
-            <img src="./../image/icons/arrow-back.png" alt="Arrow Back" class="nav-arrows-icons" /> Catalog
-        </button>
-    </a>
+        <a href="#top">
+            <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="arrows-up-icons" />
+        </a>
 
-    <a href="#top">
-        <button class="nav-arrows-buttons">
-            <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="nav-arrows-icons" />
-        </button>
-    </a>
-
-    <a href="about-us.html">
-        <button class="nav-arrows-buttons">
-            About Us <img src="./../image/icons/arrow-next.png" alt="Arrow Next" class="nav-arrows-icons" />
-        </button>
-    </a>
-
-    <br />
-    <br />
+        <a href="about-us.html">
+            <button class="arrows-buttons button-next">
+                NEXT <img src="./../image/icons/arrow-right.png" alt="Arrow Next" class="arrows-icons" />
+            </button>
+        </a>
+    </div>
 </body>
 
 </html>

@@ -39,23 +39,24 @@ body {
     color: yellow;
   }
 }
-.nav-arrows-buttons {
+.arrows-buttons {
   background-color: #ccd9ff;
   color: #00264d;
   padding: 5px 15px;
+  width: 130px;
   border: #00264d solid 0.5px;
   border-radius: 10px;
-  box-shadow: 1px 1px 6px 0px #666666;
+  box-shadow: 1px 1px 6px 0px #ccc;
   cursor: pointer;
 
-  .nav-arrows-icons {
-    height: 30px;
+  .arrows-icons {
+    height: 15px;
+    width: 25px;
     vertical-align: middle;
   }
 }
-.nav-arrows-buttons:hover {
-  transition: 0.25s;
-  border: #00264d solid 1px;
-  margin-left: 1px;
-  box-shadow: 2px 2px 5px 1px #666666;
+.arrows-buttons:hover {
+  transition: 0.1s;
+  border: #00264d solid 1.5px;
+  box-shadow: 0 0px 1px 1px #666666;
 }
