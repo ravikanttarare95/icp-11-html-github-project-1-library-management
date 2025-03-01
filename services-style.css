@@ -8,7 +8,7 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
-#main-heading {
+#main-heading-library {
   color: #313d46;
   font-family: Aclonica;
   font-size: xx-large;
@@ -17,11 +17,12 @@ body {
   text-align: center;
 }
 
-.main-heading-four {
+.space-right-icon {
+  margin-right: 10px;
+}
+.main-heading {
   display: inline-block;
-  color: #313d46;
   vertical-align: middle;
-  margin-left: 10px;
 }
 
 .navbar {
