@@ -13,9 +13,29 @@
             display: block;
             margin: auto;
         }
+
+        table {
+            border-collapse: collapse;
+            margin-left: 5px;
+        }
+
+        td,
+        th {
+            border: 1px solid #000000;
+            padding: 7px;
+            text-align: center;
+        }
+
+        .bg-color {
+            background-color: #E8F8FD;
+        }
     </style>
 </head>
-<!-- Ravikant Tarare is Working on this Page -->
+<!-- Ravikant Tarare is Working on this Page 
+primary-color: #313d46;
+secondary-color: #3674B5;
+tertiary-color: #A1E3F9;
+background-color: #E8F8FD;-->
 
 <body>
     <div class="navbar">
@@ -55,23 +75,23 @@
         <img src="./../image/Icons/membership-plans.png" height="34px" alt="Benefits Icon" />
         <h3> <u>Membership Plans:</u></h3>
         <br />
-        <table border="1">
-            <thead>
+        <table>
+            <thead style="background-color:#313d46 ;color:#ffffff">
                 <th>Plan</th>
                 <th>Features</th>
                 <th>Price</th>
             </thead>
-            <tr>
+            <tr class="bg-color">
                 <td>Basic</td>
                 <td>Borrow up to 5 books, e-resources</td>
                 <td>₹1000/year</td>
             </tr>
-            <tr>
+            <tr class="bg-color">
                 <td>Premium</td>
                 <td> Unlimited books, events, study rooms</td>
                 <td>₹2000/year</td>
             </tr>
-            <tr>
+            <tr class="bg-color">
                 <td>Family Plan</td>
                 <td> Shared account for family members</td>
                 <td>₹3000/year</td>
