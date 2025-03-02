@@ -33,7 +33,7 @@
 
         .cards-box {
             background-color: #E8F8FD;
-            margin: 10px;
+            margin: 3px;
             padding: 10px 30px;
             border: #313d46 0.5px solid;
             border-radius: 5px;
@@ -102,7 +102,6 @@
         .cards-photos-book-bank {
             width: 100%;
             border-radius: 10px 10px 0 0;
-
             background: linear-gradient(180deg, rgba(255, 255, 255, 1) 4%, rgba(232, 248, 253, 1) 35%, rgba(54, 116, 181, 1) 100%);
         }
 
@@ -126,26 +125,45 @@
             right: 0;
         }
 
-        .work-use-box {
+        .subheading-book-bank {
+            margin-left: 25px;
+        }
+
+        .work-use-policies-box {
             position: relative;
             margin: 40px 0;
-            height: 265px;
+            height: 700px;
 
             .question-mark-image {
-                height: 250px;
+                height: 680px;
                 position: absolute;
-                left: 0;
+                left: 30px;
             }
 
             .who-can-use {
                 position: absolute;
-                left: 1000px;
+                top: 250px;
+                left: 350px;
             }
 
             .how-it-works {
-                width: 600px;
                 position: absolute;
-                left: 250px;
+                top: 0;
+                left: 350px;
+            }
+
+            .policies {
+                position: absolute;
+                bottom: 0;
+                left: 350px;
+            }
+
+            .policy-image {
+                height: 500px;
+                position: absolute;
+                right: 0;
+                bottom: 50px;
+                filter: drop-shadow(8px 10px 5px #ccc);
             }
         }
     </style>
@@ -168,7 +186,7 @@
         <h1 class="main-heading">BOOK BANK </h1>
     </div>
     <div class="book-bank-main-image">
-        <img src="./../image/photos/main-book-bank-image-2.png" height="200px" alt="Book Bank Photo" />
+        <img src="./../image/photos/main-book-bank-image.png" height="200px" alt="Book Bank Photo" />
     </div>
 
     <p><b>Borrow textbooks and reference materials for an entire semester to support your academic journey.</b></p>
@@ -211,13 +229,13 @@
                 </a>
             </div>
         </div>
-        <div class="work-use-box">
+        <div class="work-use-policies-box">
             <div>
                 <img class="question-mark-image" src="./../image/photos/how-it-works-photo.png"
                     alt="question-mark-photo" />
             </div>
             <div class="who-can-use">
-                <h2><u>Who can use the Book Bank?</u></h2>
+                <h2 class="subheading-book-bank"><u>Who can use the Book Bank?</u></h2>
 
                 <ul>
                     <li>Registered students of the institution</li> <br />
@@ -227,7 +245,7 @@
             </div>
 
             <div class="how-it-works">
-                <h2><u>How It Works</u></h2>
+                <h2 class="subheading-book-bank"><u>How It Works</u></h2>
                 <ol>
                     <li><b>Register for the Service:</b> Visit the library and fill out the application form. </li>
                     <br />
@@ -241,19 +259,20 @@
                     <br />
                 </ol>
             </div>
-        </div>
+            <div class="policies">
+                <h2 class="subheading-book-bank"><u>Book Bank Policies</u></h2>
 
-        <div>
-            <h2><u>Book Bank Policies</u></h2>
-
-            <ul>
-                <li><b>Loan Duration:</b> Full semester or academic year</li> <br />
-                <li><b>Borrowing Limit:</b> Up to 4 textbooks per student</li> <br />
-                <li><b>Renewals:</b> Allowed based on availability</li> <br />
-                <li><b>Late Returns:</b> Subject to fines if not returned on time</li> <br />
-                <li><b>Book Condition:</b> Books must be returned without significant damage; lost/damaged books must be
-                    compensated</li> <br />
-            </ul>
+                <ul>
+                    <li><b>Loan Duration:</b> Full semester or academic year</li> <br />
+                    <li><b>Borrowing Limit:</b> Up to 4 textbooks per student</li> <br />
+                    <li><b>Renewals:</b> Allowed based on availability</li> <br />
+                    <li><b>Late Returns:</b> Subject to fines if not returned on time</li> <br />
+                    <li><b>Book Condition:</b> Books must be returned without significant damage; lost/damaged books
+                        must be
+                        compensated</li> <br />
+                </ul>
+            </div>
+            <div><img class="policy-image" src="./../image/photos/policy.png" alt="policies photo"></div>
         </div>
         <hr />
     </div>
