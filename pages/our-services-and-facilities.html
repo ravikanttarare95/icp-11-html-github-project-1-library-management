@@ -14,13 +14,52 @@
         h2 {
             color: #00264d;
         }
+
+        .main-container-services {
+            background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(232,248,253,1) 50%, rgba(255,255,255,1) 100%);
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .main-photo-services {
+                background: linear-gradient(to bottom, #a1e3f9 0%, #313d46 100%);
+                border-radius: 50%;
+            }
+
+            .container-services {
+                /* background-color: #163fae; */
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .services {
+                    background: linear-gradient(to bottom, #ffffff 40%, #a1e3f9 100%);
+                    height: 210px;
+                    width: 150px;
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
     </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
 
 <body>
-    <img class="logo" src="./../image/main-library-logo1.webp" height="100px" alt="Library Logo" />
-    <p id="main-heading-library">SARVOTTAM <br />LIBRARY</p>
+    <div class="bg-color-library-name">
+        <img class="logo" src="./../image/main-library-logo1.webp" height="100px" alt="Library Logo" />
+
+        <p id="main-heading-library">SARVOTTAM <br />LIBRARY</p>
+    </div>
     <div class="navbar">
         <a href="./../index.html" class="closed-nav">HOME</a>
         <a href="events.html" class="closed-nav">EVENTS</a>
@@ -31,105 +70,74 @@
         <a href="contact-us.html" class="closed-nav">CONTACT-US</a>
         <a href="library-rules.html" class="closed-nav">LIBRARY-RULES</a>
     </div>
-    <div>
-        <h2 class="heading-color"><u>OUR SERVICES</u></h2>
+    <h2 class="heading-color"><u>OUR SERVICES</u></h2>
+    <div class="main-container-services">
+        <div class="container-services">
+            <div class="services">
+                <img src="./../image/icons/book-lending.png" height="80px" alt="Book Lending Icon" />
+                <a href="book-lending.html" target="_blank">
+                    <h3>Book Lending</h3>
+                    <p>Access to knowledge and entertainment for all our users...</p>
+                </a>
 
-        <img src="./../image/photos/main-services.png" height="250px" alt="Our Service Photo" /> <br /><br /><br />
+            </div>
+            <div class="services">
+                <img src="./../image/icons/membership.png" height="80px" alt="Membership Icon" />
+                <a href="membership.html" target="_blank">
+                    <h3>Membership</h3>
+                    <p>Unlock a World of Knowledge with Our Membership...</p>
+                </a>
 
-        <table>
-            <tr>
-                <td>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp
-                    <img src="./../image/icons/book-lending.png" height="80px" alt="Book Lending Icon" />
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </div>
+            <div class="services">
+                <img src="./../image/icons/book-bank.png" height="80px" alt="Book Bank Icon" />
+                <a href="book-bank.html" target="_blank">
+                    <h3>Book Bank</h3>
+                    <p>Borrow textbooks and reference materials for an entire semester...</p>
+                </a>
 
-                </td>
-                <td>
-                    &nbsp&nbsp
-                    <img src="./../image/icons/membership.png" height="80px" alt="Book Lending Icon" />
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                </td>
-                <td>
-                    &nbsp
-                    <img src="./../image/icons/book-bank.png" height="80px" alt="Book Lending Icon" />
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </div>
+            <div class="services">
+                <img src="./../image/icons/photocopying.png" height="80px" alt="
+                Photocopying Icon" />
+                <a href="photocopying.html" target="_blank">
+                    <h3>Photocopying</h3>
+                    <p>Colour, Black & White Photocopy...</p>
+                </a>
 
-                </td>
-                <td>
-                    &nbsp&nbsp
-                    <img src="./../image/icons/photocopying.png" height="80px" alt="Book Lending Icon" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="book-lending.html" target="_blank">
-                        <h3>Book Lending</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="membership.html" target="_blank">
-                        <h3>Membership</h3>
-                    </a>
-
-                </td>
-                <td>
-                    <a href="book-bank.html" target="_blank">
-                        <h3>Book Bank</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="photocopying.html" target="_blank">
-                        <h3>Photocopying</h3>
-                    </a>
-                </td>
-            </tr>
-        </table>
+            </div>
+        </div>
+        <img class="main-photo-services" src="./../image/photos/main-services.png" height="250px"
+            alt="Our Service Photo" />
     </div>
-    <br /><br />
+    <br />
     <hr />
-    <br /><br />
+    <br />
     <div>
-        <h2 class="heading-color"><u>FACILITIES</u></h2>
-        <br /><br />
-        <table>
-            <tr>
-                <td>
-                    <img src="./../image/Icons/facilities-free-wifi.png" height="100px"
-                        alt="Wifi Icon" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                </td>
-                <td>
-                    <img src="./../image/Icons/facilities-air-conditioners.png" height="100px" alt="AC Icon" />
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                </td>
-                <td>
-                    <img src="./../image/Icons/facilities-comfortable-seating.png" height="100px" alt="Chair Icon" />
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                </td>
-            </tr>
-            <tr>
-                <td><b>Free WiFi </b><br><br><br></td>
-                <td><b>Air Conditioners </b><br><br><br></td>
-                <td><b>Comfortable Seating </b><br><br><br></td>
-            </tr>
-            <tr>
-                <td><img src="./../image/Icons/facilities-plug-points.png" height="100px" alt="Plug Point Icon" />
-                </td>
-                <td><img src="./../image/Icons/facilities-private-desk.png" height="100px" alt="Private Desk Icon" />
-                </td>
-                <td><img src="./../image/Icons/facilities-purified-water.png" height="100px" alt="Purifier Icon" />
-                </td>
-            </tr>
-            <tr>
-                <td><b>Plug Points </b></td>
-                <td><b>Private Desk </b></td>
-                <td><b>Purified Water </b></td>
-            </tr>
-        </table>
+        <div>
+            <h2 class="heading-color"><u>FACILITIES</u></h2>
+        </div>
+        <div>
+            <br /><br />
+
+            <img src="./../image/Icons/facilities-free-wifi.png" height="100px" alt="Wifi Icon" />
+            <b>Free WiFi </b><br><br><br>
+
+            <img src="./../image/Icons/facilities-air-conditioners.png" height="100px" alt="AC Icon" />
+            <b>Air Conditioners </b><br><br><br>
+
+            <img src="./../image/Icons/facilities-comfortable-seating.png" height="100px" alt="Chair Icon" />
+            <b>Comfortable Seating </b><br><br><br>
+
+            <img src="./../image/Icons/facilities-plug-points.png" height="100px" alt="Plug Point Icon" />
+            <b>Plug Points </b><br>
+
+            <img src="./../image/Icons/facilities-private-desk.png" height="100px" alt="Private Desk Icon" />
+            <b>Private Desk </b><br>
+
+            <img src="./../image/Icons/facilities-purified-water.png" height="100px" alt="Purifier Icon" />
+            <b>Purified Water </b><br>
+        </div>
     </div>
     <br />
     <br />
