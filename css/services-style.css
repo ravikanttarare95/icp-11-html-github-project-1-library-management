@@ -1,51 +1,12 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-.logo {
-  border-radius: 50%;
-  margin: auto;
-  display: inline-block;
-  vertical-align: middle;
-}
-#main-heading-library {
-  color: #313d46;
-  font-family: Aclonica;
-  font-size: xx-large;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.space-right-icon {
+ .space-right-icon {
   margin-right: 10px;
 }
 .main-heading {
   display: inline-block;
   vertical-align: middle;
-}
+} 
 
-.navbar {
-  margin: 0 0 40px 0;
-  padding: 25px 0 25px 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: large;
-  background-color: #313d46;
-  word-spacing: 30px;
-  position: relative;
-  .open-nav {
-    color: #ffffff;
-  }
-  .closed-nav {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .closed-nav:hover {
-    color: yellow;
-  }
-}
-.arrows-buttons {
+ .arrows-buttons {
   background-color: #ccd9ff;
   color: #00264d;
   padding: 5px 15px;
