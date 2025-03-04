@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Library Event</title>
+    <title>Library Events</title>
+    <style>
+        h1{
+        background-color: aliceblue;
+            color: #313d46;
+        }
+        #First-heading{
+            color: #3674B5;
+        }
+        #Second-heading{
+            color: #3674B5;
+        }
+        #third-heading{
+            color: #3674B5;
+        }
+        #fouth-heading{
+            color: #3674B5;
+        }
+        .btn-send-it{
+            background-color: #3674B5;
+            color: #313d46;
+            font-size: 16px;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .btn-up-arrow{
+            background-color:white;
+            color: #3674B5;
+            font-size: 15px;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
 </head>
 <body>
     <h1 align="center"><img src="./../image/main-library-logo1.webp" height="70px" alt="Library Logo" /></h1>
+    <hr>
     <hr>
     <h3>
         <div align=" center">
@@ -19,13 +59,14 @@
         </div>
     </h3>
     <hr>
+    <hr>
     <h1>Library Event</h1>
     <img src="./../image/events.jpeg" height="300px" alt="events"/>
     <div>
     <br />
     </div>
     <br/>
-        <h3><b>"Welcome! Welcome! Welcome!"</b></h3>
+        <h2><b>"Welcome! Welcome! Welcome!"</b></h2>
         <img src="./../image/welcome-back.png" height="50px" alt="Welcome"/>
     <p>
        <h2>
@@ -35,8 +76,9 @@
     </p>
     <hr/>
     <div>
+        <h2 id="First-heading">First Event</h2>
         <img src="./../image/workshop.jpg" height="200px" alt="First event"/>
-        <h3>First Event<b>{Workshops}</b></h3>
+        <h4><b>{Workshops}</b></h4>
         <img src="./../image/workshop.png" height="50px" alt="workshop"/>
        <ul> 
         <li>Workshop creativity is only for non-fiction authors</li>
@@ -49,8 +91,9 @@
     </div>
     <hr/>
     <div>
+        <h2 id="Second-heading">Second Event</h2>
        <img src="./../image/games.jpg" height="200px" alt="Second event"/>
-       <h3>Second Event <b>{Games}</b></h3>
+       <h4><b>{Games}</b></h4>
        <img src="./../image/game.png" height="50px" alt="game"/>
        <ul>
         <li>Scavenger hunts</li>
@@ -63,9 +106,11 @@
     </div>
     <hr/>
     <div>
+        <h2 id="third-heading">Third Event</h2>
         <img src="./../image/guest-lecture.jpg" height="200px" alt="third event"/>
-        <h3>Third Event<b>{guest lecture}</b></h3>
+        <h4><b>guest-lecture</b></h4>
         <img src="./../image/guest-lecture.png" height="50px" alt="guest lecture"/>
+        
          <ul>
             <li>Industry Expertise</li>
             Students gain access to current industry trends, challenges, and practices directly from professionals working in the field. 
@@ -79,7 +124,7 @@
     </div>
     <hr/>
     <hr/>
-        <h2>Form For Registration</h2>
+        <h2 id="fouth-heading">Form For Registration</h2>
         <form>
             <label for="inputfullname"> Enter Your Name :</label>
             <input type="text" id="inputfullname" placeholder="Enter Your Name" required/>
@@ -100,8 +145,10 @@
             <option>Guest lecture</option>
         </select>
         <br/><br/>
-        <input type="submit" value="Send it" />
-
-        </form>
+        <button class="btn-send-it">send-it</button>
+    </form>
+        <a href="#top">
+            <button class="btn-up-arrow">page-up</button>
+        </a>
 </body>
 </html>
