@@ -10,7 +10,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+<style>
+     h2 {
+            color: #00264d;
+        }
 
+        .main-container-services {
+            background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(232,248,253,1) 50%, rgba(255,255,255,1) 100%);
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+
+            .main-photo-services {
+                background: linear-gradient(to bottom, #a1e3f9 0%, #313d46 100%);
+                border: radius 60px;;
+            }
+
+            .container-services {
+                /* background-color: #163fae; */
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .services {
+                    background: linear-gradient(to bottom, #ffffff 40%, #a1e3f9 100%);
+                    height: 280px;
+                    width: 400px;
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+</style>
 </head>
 
 <body>
@@ -29,21 +70,72 @@
         <a href="contact-us.html" class="nav-menu">CONTACT-US</a>
         <a href="library-rules.html" class="nav-menu">LIBRARY-RULES</a>
     </div>
-       <div><table>
-        <tr>
-            <td> <img height="70px" src="../image/icons/cv.png"></td>
-            <td> <h1> Customer Reviews : </h1></td>
-            <td><h3><i><u>&nbsp; What our customers says ?</u> </i></h3></td>
-        </tr>
-       </table>
+    <div>
+    <h2 class="heading-color"><img height="50px" src="../image/icons/cv.png"><u>Customer Reviews :</u><i> What our customers says ?</i></h2>
+    <h3>User reviews, comprising feedback and ratings from consumers, greatly influence buying decisions. They provide realistic insights, build trust, enhance customer experience, and boost brand reputation.</h3>
+</div>
 
+    <div class="main-container-services">
+        <div class="container-services">
+            <div class="services">
+                <img src="./../image/icons/profile.png" height="80px" alt="Book Lending Icon" />
+                <a href="book-lending.html" target="_blank">
+                    <h3><b>INDER KANTA PURI</b></h3>
+                    <p> I am impressed by the ease of catloging and searching books. The system is intuitive and efficient ,saving us time and efforts </p>
+                    <img src="../image/icons/star2.png" height="80px" alt="Book Lending Icon" />
+                </a>
+         </div>
+     
+            <div class="services">
+                <img src="../image/icons/profile1.png" height="80px" alt="Book Lending Icon" />
+                <a href="book-lending.html" target="_blank">
+                    <h3><b>INDIRA SOMAN</b></h3>
+                    <p> The support team is responsive and helpful . they have assisted us in customizing the system to meet our unique needs. </p>
+                    <img src="../image/icons/star.png" height="80px" alt="Book Lending Icon" />
+                </a>
+         </div>
+            <div class="services">
+                <img src="../image/icons/profile2.png" height="80px" alt="Book Lending Icon" />
+                <a href="book-lending.html" target="_blank">
+                    <h3><b>INDRA SHARMA</b></h3>
+                    <p> Our protons love the online catlog and self-checkout features .It's convient and accessible,making library service more enjoyable. </p>
+                    <img src="../image/icons/star2.png" height="80px" alt="Book Lending Icon" />
+                </a>
+         </div>
 
+            <div class="services">
+                <img src="../image/icons/profile3.png" height="80px" alt="Book Lending Icon" />
+                <a href="book-lending.html" target="_blank">
+                    <h3><b>GOPENDRA SINGH</b></h3>
+                    <p>It would be fantastic to have a mobile app for protons to access the catlog and library service on-the-go </p>
+                    <img src="../image/icons/star.png" height="80px" alt="Book Lending Icon" />
+                </a>
+         </div>
 
-       <table>
-        <td><h3>User reviews, comprising feedback and ratings from consumers, greatly influence buying decisions. They provide realistic insights, build trust, enhance customer experience, and boost brand reputation.</h3></td>
-       </table>
-      
-       </div>
+           
+            <div class="services">
+                <img src="../image/icons/profile4.png" height="80px" alt="Book Lending Icon" />
+                <a href="book-lending.html" target="_blank">
+                    <h3><b>PRAGYA PANDEY</b></h3>
+                    <p> The reporting features are excellent !! We can now track circulation ,inventory ,and ptron activity with ease,making data driven descision a breeze </p>
+                    <img src="../image/icons/star2.png" height="80px" alt="Book Lending Icon" />
+                </a>
+         </div>
+
+           
+            <div class="services">
+                <img src="../image/icons/profile5.png" height="80px" alt="Book Lending Icon" />
+                <a href="book-lending.html" target="_blank">
+                    <h3><b>KAPTAN SINGH RAJPUT</b></h3>
+                    <p>A more comprehensive analytics dasgboard would be helpful and understanding patron behavioural and laibrary usage pattern </p>
+                    <img src="../image/icons/star.png" height="80px" alt="Book Lending Icon" />
+                </a>
+         </div>
+        </div>
+    </div>
+    <br />
+    <hr />
+    <br />
 
     <div> 
         <table border="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -64,57 +156,7 @@
                         <input type="radio" > <input type="radio" >  <input type="radio" >  <input type="radio" >  <input type="radio" ><br/><br/>
                         <input type="submit">
                     </form>
-                </th>
-                 <td >  &nbsp;&nbsp;&nbsp;<img height="60px" src="./../image/icons/profile.png">
-                    &nbsp;&nbsp;&nbsp;
-                  <a><b>INDER KANTA PURI</b></a>  
-                 <p> I am impressed by the ease of catloging and searching books. The system is intuitive and efficient ,saving us time and efforts </p>
-                    <img height="100px"  src="../image/icons/star2.png">
-                     </td>
-                
-                <td>&nbsp;&nbsp;&nbsp;<img  height="60px" src="../image/icons/profile1.png">
-                    &nbsp;&nbsp;&nbsp;
-                    <a><b>INDIRA SOMAN</b></a>
-                    <p>The support team is responsive and helpful . they have assisted us in customizing the system to meet our unique needs.  </p>
-                    <img height="90px"  src="..//image/icons/star2.png">
-                 </td>
-                
-                <tr>
-            <tr>
-                <td>&nbsp;&nbsp;&nbsp;<img  height="60px" src="../image/icons/profile2.png">
-                    &nbsp;&nbsp;&nbsp;
-                    <a><b>INDRA SHARMA</b></a>
-                    <p> Our protons love the online catlog and self-checkout features .It's convient and accessible,making library service more enjoyable.</p> 
-                    <img height="90px"  src="../image/icons/star.png">&nbsp;&nbsp;&nbsp;
-                 </td>
-                <td>&nbsp;&nbsp;&nbsp;<img  height="60px" src="../image/icons/profile3.png">
-                    &nbsp;&nbsp;&nbsp;
-                    <a><b>GOPENDRA SINGH</b></a>
-                    <p>It would be fantastic to have a mobile app for protons to access the catlog and library service on-the-go</p> 
-                    <img height="90px"  src="../image/icons/star2.png">&nbsp;&nbsp;&nbsp;
-                 </td>
-                
                
-            </tr>
-            
-            <tr>
-                <td>&nbsp;&nbsp;&nbsp;<img  height="60px" src="../image/icons/profile4.png">
-                    &nbsp;&nbsp;&nbsp;
-                    <a><b>PRAGYA PANDEY</b></a>
-                    <p>The reporting features are excellent !! We can now track circulation ,inventory ,and ptron activity with ease,making data driven descision a breeze</p>
-                    <img height="90px"  src="../image/icons/star.png">
-                 </td>
-                 <td>&nbsp;&nbsp;&nbsp;<img  height="60px" src="../image/icons/profile5.png"> 
-                    &nbsp;&nbsp;&nbsp; 
-                    <a><b>KAPTAN SINGH RAJPUT</b></a>
-                    <p>A more comprehensive analytics dasgboard would be helpful and understanding patron behavioural and laibrary usage pattern</p>
-                    <img height="100px"  src="../image/icons/star.png"> &nbsp;&nbsp;&nbsp;
-                </td>
-            </tr>
-        </table>
-    </div>
-    <br/>
-    <br/>
 
 <table>
     <tr >
