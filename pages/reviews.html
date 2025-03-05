@@ -13,57 +13,66 @@
 
 <style>
     .first-heading{
-        background-color: rgba(243, 255, 78, 0.661);
+       
     }
 
     .registration-form-div{
-        background-color: fuchsia;
+        position: absolute;
         display: flex;
-        flex-direction:column;
-        padding: 30px;
-        
-          
+        flex-direction:row;      
     }
     .form-heading{
-        background-color: blueviolet;
-        text-align: center;
-       margin: 10px;
+      margin-left: 750px;
+        background-color: rgb(232, 232, 232);
+        text-align: right;
+       border: 2px solid black;
+       border-radius: 10px;
+       width:500px;
+       height: 400px;
     }
      .form{
+        
         font-size: 30px;
-        background-color: rgb(173, 87, 87);
-        margin: 10px;
+        background-color: rgb(183, 183, 183);
+        margin: 40px;
         width: 600px;
         text-align: center;
         padding: 30px;
+        border: 0px solid black;
+       border-radius: 10px;
+       box-shadow: 0px 6px 5px 6px #4e555a;
      }
      .submit-button{
-        background-color: black;
-        color: aliceblue;
+        background-color: rgb(224, 224, 224);
+       
         height: 40px;
         width:70px;
+        box-shadow: 3px 3px 3px 3px #405259;
      }
 
      .review-div{
-     background-color: rgb(128, 128, 128);
+        background-color: rgb(232, 232, 232);
      display: flex;
      flex-direction: row;
      }
 
      .review-card{
-     background-color: rgb(255, 255, 255);
+      background-color: white;
      width: 400px;
      height: 300px;
      margin: 50px;
      padding: 30px;
+     
+     border-radius: 10px; 
+     box-shadow: -1px 3px 5px 5px #4e555a;
      }
-     .main-photo{
-        background-color: rgb(14, 215, 14);
+     .main-photo{      
        
-       
+        text-align: center;
+        align-items: center;
      }
  .photo-section{
-    background-color: firebrick;
+
     display: flex;
     flex-direction:row;
     padding:10px ;
@@ -71,19 +80,17 @@
 
  }
  .photo-heading{
-background-color: aqua;
-text-align: center;
-
-
+   
  }
  .photo-div{
-    background-color: black;
-    margin: 10px;
-  padding: 5px;
-    width: 300px;
-    height: 300px;
-   
+    box-shadow: 0px 6px 5px 6px #c2c2c2;
+    background-color: rgb(232, 232, 232);
+    margin: 20px;
+  padding: 20px;
+    width: 250px;
+    height: 270px;  
     
+    border-radius: 10px; 
  }
     
 </style>
@@ -112,11 +119,15 @@ text-align: center;
     </div>
 
     <div class="registration-form-div">
+       
         <div class="form-heading">
-            <h1 id="main-heading-library">  <img height="50px" src="../image/rating.png"> Add Your Review</h1>
+          <h1>add image here</h1>
         </div>
+        
+    </div>
 
-         <div class="form">    
+         <div class="form"> 
+            <h1 id="main-heading-library">  <img height="50px" src="../image/rating.png"> Add Your Review</h1>   
         <form>
             <lable> Name :</lable>
             <input type="text" placeholder="Enter your name"><br><br>
@@ -134,8 +145,7 @@ text-align: center;
        <br>
     <div class="review-div">
             <div class="review-card">
-                <img  src="./../image/icons/profile.png" height="80px" alt="Book Lending Icon" />
-                <a href="book-lending.html" target="_blank">
+                <img  src="./../image/icons/profile.png" height="80px"  alt="Book Lending Icon" />
                     <h3 ><b>INDER KANTA PURI</b></h3>
                     <p> I am impressed by the ease of catloging and searching books. The system is intuitive and efficient ,saving us time and efforts </p>
                     <img  src="../image/icons/star2.png" height="80px" alt="Book Lending Icon" />
@@ -144,18 +154,18 @@ text-align: center;
      
             <div class="review-card">
                 <img src="../image/icons/profile1.png" height="80px" alt="Book Lending Icon" />
-                <a href="book-lending.html" target="_blank">
+                
                     <h3><b>INDIRA SOMAN</b></h3>
                     <p> The support team is responsive and helpful . they have assisted us in customizing the system to meet our unique needs. </p>
                     <img src="../image/icons/star.png" height="80px" alt="Book Lending Icon" />
                 </a>
          </div>
             <div class="review-card">
-                <img src="../image/icons/profile2.png" height="80px" alt="Book Lending Icon" />
-                <a href="book-lending.html" target="_blank">
+                <img src="../image/icons/profile2.png" height="80px"  />
+            
                     <h3><b>INDRA SHARMA</b></h3>
                     <p> Our protons love the online catlog and self-checkout features .It's convient and accessible,making library service more enjoyable. </p>
-                    <img src="../image/icons/star2.png" height="80px" alt="Book Lending Icon" />
+                    <img src="../image/icons/star2.png" height="80px"  />
                 </a>
          </div>
          <br>  
@@ -163,53 +173,54 @@ text-align: center;
   
     <div class="review-div">
         <div class="review-card">
-            <img src="../image/icons/profile5.png" height="80px" alt="Book Lending Icon" />
-            <a href="book-lending.html" target="_blank">
+            <img src="../image/icons/profile5.png" height="80px"  />
+            
                 <h3><b>KAPTAN SINGH RAJPUT</b></h3>
                 <p>A more comprehensive analytics dasgboard would be helpful and understanding patron behavioural and laibrary usage pattern </p>
-                <img src="../image/icons/star.png" height="80px" alt="Book Lending Icon" />
+                <img src="../image/icons/star.png" height="80px"  />
             </a>
      </div>
      <div class="review-card">
         <img src="../image/icons/profile4.png" height="80px" alt="Book Lending Icon" />
-        <a href="book-lending.html" target="_blank">
+       
             <h3><b>PRAGYA PANDEY</b></h3>
             <p> The reporting features are excellent !! We can now track circulation ,inventory ,and ptron activity with ease,making data driven descision a breeze </p>
-            <img src="../image/icons/star2.png" height="80px" alt="Book Lending Icon" />
+            <img src="../image/icons/star2.png" height="80px" />
         </a>
  </div>
  <div class="review-card">
-    <img src="../image/icons/profile3.png" height="80px" alt="Book Lending Icon" />
-    <a href="book-lending.html" target="_blank">
+    <img src="../image/icons/profile3.png" height="80px"  />
+   
         <h3><b>GOPENDRA SINGH</b></h3>
         <p>It would be fantastic to have a mobile app for protons to access the catlog and library service on-the-go </p>
-        <img src="../image/icons/star.png" height="80px" alt="Book Lending Icon" />
+        <img src="../image/icons/star.png" height="80px" />
     </a>
 </div>
  </div>
 
-
+<br><br>
 
 
  <div class="main-photo">
     <div class="photo-heading">
-        <h1 id="main-heading-library"> Photos Related To Library </h1>
+        <h1 id="main-heading-library"><u>Photos Related To Library </u> </h1>
     </div>
+    
 <div class="photo-section" > 
 <div class=" photo-div">
-    <img height="200px" src="../home-assets/real-library.jpg">
+    <img height="170px" width="220px" src="../home-assets/real-library.jpg">
     <h2><i>Library</i></h2>
 </div>
 <div class=" photo-div">
-    <img height="200px" width="300px" src="../image/photos/main-library-rules.jpg">
+    <img height="170px" width="220px" src="../image/photos/main-library-rules.jpg">
     <h2><i>Library Rules</i></h2>
 </div>
 <div class=" photo-div">
-    <img height="200px" src="../image/photos/main-membership.jpg">
+    <img height="170px" width="220px" src="../image/photos/main-membership.jpg">
     <h2><i>Membership</i></h2>
 </div>
 <div class=" photo-div">
-    <img height="200px" src="../image/photos/main-photocopying.jpg">
+    <img height="170px" width="220px" src="../image/photos/main-photocopying.jpg">
     <h2><i>Photocopying</i></h2>
 </div>
 </div>
