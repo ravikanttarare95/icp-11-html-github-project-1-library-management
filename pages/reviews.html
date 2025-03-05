@@ -16,12 +16,32 @@
         background-color: rgba(243, 255, 78, 0.661);
     }
 
-    .registration-form{
-          background-color: rgb(173, 87, 87);
+    .registration-form-div{
+        background-color: fuchsia;
+        display: flex;
+        flex-direction:column;
+        padding: 30px;
+        
           
     }
+    .form-heading{
+        background-color: blueviolet;
+        text-align: center;
+       margin: 10px;
+    }
      .form{
-        font-size: 20px;
+        font-size: 30px;
+        background-color: rgb(173, 87, 87);
+        margin: 10px;
+        width: 600px;
+        text-align: center;
+        padding: 30px;
+     }
+     .submit-button{
+        background-color: black;
+        color: aliceblue;
+        height: 40px;
+        width:70px;
      }
 
      .review-div{
@@ -64,25 +84,27 @@
     <h3>User reviews, comprising feedback and ratings from consumers, greatly influence buying decisions. They provide realistic insights, build trust, enhance customer experience, and boost brand reputation.</h3>
     </div>
 
-    <div class="registration-form">
-        <form class="form">
-            <img height="80px" src="../image/rating.png">
-            <h1>Add Your Review</h1>
-           
+    <div class="registration-form-div">
+        <div class="form-heading">
+            <h1 id="main-heading-library">  <img height="50px" src="../image/rating.png"> Add Your Review</h1>
+        </div>
+
+         <div class="form">    
+        <form>
             <lable> Name :</lable>
-            <input type="text" placeholder="Enter your name">
+            <input type="text" placeholder="Enter your name"><br><br>
             <lable>Email:</lable>
-            <input type="email" placeholder="Enter Your Email-Id">
+            <input type="email" placeholder="Enter Your Email-Id"><br><br>
             <lable>Description:</lable>                 
-            <input type="textbox" placeholder="Write Description"><br/>
+            <input type="textbox" placeholder="Write Description"><br/><br>
             
             <lable><img height="30px" src="../image/icons/1-star.png"> Rating</lable>
             <input type="radio" > <input type="radio" >  <input type="radio" >  <input type="radio" >  <input type="radio" ><br/><br/>
-            <input type="submit">
+            <input class="submit-button" type="submit">
         </form>
-        
+    </div> 
     </div>
-
+       <br>
     <div class="review-div">
             <div class="review-card">
                 <img  src="./../image/icons/profile.png" height="80px" alt="Book Lending Icon" />
@@ -139,7 +161,7 @@
 </div>
  </div>
 
- 
+
 
 
 <!-- completed code till reviwes card other is remaining -->
