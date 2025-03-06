@@ -13,7 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <style>
         h2 {
-            color: #00264d;
+            color: #313d46;
+            margin: 10px;
+        }
+
+        h3 {
+            color: #3674B5;
+            text-shadow: 1px 2px 1px #ccc;
+        }
+
+        a {
+            text-decoration: none;
         }
 
         .main-container-services {
@@ -30,7 +40,6 @@
             }
 
             .container-services {
-                /* background-color: #163fae; */
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -40,9 +49,10 @@
                     background: linear-gradient(to bottom, #ffffff 40%, #a1e3f9 100%);
                     height: 210px;
                     width: 150px;
-                    margin: 10px;
+                    margin: 20px;
                     padding: 10px;
-                    border: 1px solid #ccc;
+                    border: 1px solid #3674B5;
+                    box-shadow: 0 2px 5px 3px #ccc;
                     border-radius: 20px;
                     display: flex;
                     flex-direction: column;
@@ -50,7 +60,42 @@
                     align-items: center;
                     text-align: center;
                 }
+
+                .services:hover {
+                    transition: 0.15s;
+                    border: 1px solid #3674B5;
+                    box-shadow: 0 3px 5px 1px #666666;
+                }
             }
+        }
+
+        .container-facilities {
+            background: linear-gradient(20deg, rgba(255, 255, 255, 1) 0%, rgba(232, 248, 253, 1) 50%, rgba(255, 255, 255, 1) 100%);
+            padding: 20px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .facilities {
+                margin: 5px;
+                padding: 10px;
+                color: #313d46;
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+            }
+        }
+
+        .facilities-icons {
+            background: radial-gradient(circle, rgba(161, 227, 249, 0.39539565826330536) 50%, rgba(255, 255, 255, 1) 100%);
+            height: 80px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            border: 2px solid #313d46;
         }
     </style>
 </head>
@@ -68,21 +113,21 @@
             <li><a href="./../index.html" class="nav-menu">HOME</a></li>
             <li><a href="events.html" class="nav-menu">EVENTS</a></li>
             <li><a href="catalog.html" class="nav-menu">CATALOG</a></li>
-            <li><a href="our-services-and-facilities.html"
-                    class="nav-menu selected-nav-menu">OUR-SERVICES-&-FACILITIES</a></li>
-            <li><a href="about-us.html" class="nav-menu">ABOUT-US</a></li>
+            <li><a href="our-services-and-facilities.html" class="nav-menu selected-nav-menu">OUR SERVICES &
+                    FACILITIES</a></li>
+            <li><a href="about-us.html" class="nav-menu">ABOUT US</a></li>
             <li><a href="reviews.html" class="nav-menu">REVIES</a></li>
-            <li><a href="contact-us.html" class="nav-menu">CONTACT-US</a></li>
-            <li><a href="library-rules.html" class="nav-menu">LIBRARY-RULES</a></li>
+            <li><a href="contact-us.html" class="nav-menu">CONTACT US</a></li>
+            <li><a href="library-rules.html" class="nav-menu">LIBRARY RULES</a></li>
         </ul>
     </div>
-    <h2 class="heading-color"><u>OUR SERVICES</u></h2>
+    <h2><u>OUR SERVICES</u></h2>
     <div class="main-container-services">
         <div class="container-services">
             <div class="services">
                 <img src="./../image/icons/book-lending.png" height="80px" alt="Book Lending Icon" />
                 <a href="book-lending.html" target="_blank">
-                    <h3>Book Lending</h3>
+                    <h3>BOOK LENDING</h3>
                     <p>Access to knowledge and entertainment for all our users...</p>
                 </a>
 
@@ -90,7 +135,7 @@
             <div class="services">
                 <img src="./../image/icons/membership.png" height="80px" alt="Membership Icon" />
                 <a href="membership.html" target="_blank">
-                    <h3>Membership</h3>
+                    <h3>MEMBERSHIP</h3>
                     <p>Unlock a World of Knowledge with Our Membership...</p>
                 </a>
 
@@ -98,7 +143,7 @@
             <div class="services">
                 <img src="./../image/icons/book-bank.png" height="80px" alt="Book Bank Icon" />
                 <a href="book-bank.html" target="_blank">
-                    <h3>Book Bank</h3>
+                    <h3>BOOK BANK</h3>
                     <p>Borrow textbooks and reference materials for an entire semester...</p>
                 </a>
 
@@ -107,7 +152,7 @@
                 <img src="./../image/icons/photocopying.png" height="80px" alt="
                 Photocopying Icon" />
                 <a href="photocopying.html" target="_blank">
-                    <h3>Photocopying</h3>
+                    <h3>PHOTOCOPYING</h3>
                     <p>Colour, Black & White Photocopy...</p>
                 </a>
 
@@ -121,35 +166,46 @@
     <br />
     <div>
         <div>
-            <h2 class="heading-color"><u>FACILITIES</u></h2>
+            <h2><u>FACILITIES</u></h2>
         </div>
-        <div>
-            <br /><br />
+        <div class="container-facilities">
+            <div class="facilities">
+                <img class="facilities-icons" src="./../image/Icons/facilities-free-wifi.png" alt="Wifi Icon" />
+                <b>Free WiFi </b>
+            </div>
 
-            <img src="./../image/Icons/facilities-free-wifi.png" height="100px" alt="Wifi Icon" />
-            <b>Free WiFi </b><br><br><br>
+            <div class="facilities">
+                <img class="facilities-icons" src="./../image/Icons/facilities-air-conditioners.png" height="100px"
+                    alt="AC Icon" />
+                <b>Air Conditioners </b>
+            </div>
 
-            <img src="./../image/Icons/facilities-air-conditioners.png" height="100px" alt="AC Icon" />
-            <b>Air Conditioners </b><br><br><br>
+            <div class="facilities">
+                <img class="facilities-icons" src="./../image/Icons/facilities-comfortable-seating.png" height="100px"
+                    alt="Chair Icon" />
+                <b>Comfortable Seating </b>
+            </div>
 
-            <img src="./../image/Icons/facilities-comfortable-seating.png" height="100px" alt="Chair Icon" />
-            <b>Comfortable Seating </b><br><br><br>
+            <div class="facilities">
+                <img class="facilities-icons" src="./../image/Icons/facilities-plug-points.png" height="100px"
+                    alt="Plug Point Icon" />
+                <b>Plug Points </b>
+            </div>
 
-            <img src="./../image/Icons/facilities-plug-points.png" height="100px" alt="Plug Point Icon" />
-            <b>Plug Points </b><br>
+            <div class="facilities">
+                <img class="facilities-icons" src="./../image/Icons/facilities-private-desk.png" height="100px"
+                    alt="Private Desk Icon" />
+                <b>Private Desk </b>
+            </div>
 
-            <img src="./../image/Icons/facilities-private-desk.png" height="100px" alt="Private Desk Icon" />
-            <b>Private Desk </b><br>
-
-            <img src="./../image/Icons/facilities-purified-water.png" height="100px" alt="Purifier Icon" />
-            <b>Purified Water </b><br>
+            <div class="facilities">
+                <img class="facilities-icons" src="./../image/Icons/facilities-purified-water.png" height="100px"
+                    alt="Purifier Icon" />
+                <b>Purified Water </b>
+            </div>
         </div>
     </div>
-    <br />
-    <br />
     <hr />
-    <br />
-    <br />
     <div>
         <video controls poster="./../videos/library-advantages.webp" height="500px">
             <source src="./../videos/library-benifits.mp4" type="video/mp4" />
