@@ -7,7 +7,7 @@
     <link rel="icon" href="./../image/main-library-logo1.webp">
     <title>Book Lending</title>
     <link rel="stylesheet" href="./../css/style.css" />
-    <link rel="stylesheet" href="./../services-style.css" />
+    <link rel="stylesheet" href="./../css/services-style.css" />
     <style>
         .logo {
             border-radius: 50%;
@@ -19,13 +19,17 @@
 
 <body>
     <div class="navbar">
-        <a href="./book-lending.html" class="selected-nav-menu">BOOK-LENDING</a>
-        <a href="./membership.html" class="nav-menu">MEMBERSHIP</a>
-        <a href="./book-bank.html" class="nav-menu">BOOK-BANK</a>
-        <a href="./photocopying.html" class="nav-menu">PHOTOCOPYING</a>
+        <div>
+            <img class="logo" src="./../image/main-library-logo1.webp" height="50px" alt="Library Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+            <li><a href="./book-lending.html" class="nav-menu selected-nav-menu">BOOK LENDING</a></li>
+            <li><a href="./membership.html" class="nav-menu">MEMBERSHIP</a></li>
+            <li><a href="./book-bank.html" class="nav-menu">BOOK BANK</a></li>
+            <li><a href="./photocopying.html" class="nav-menu">PHOTOCOPYING</a></li>            
+        </ul>
     </div>
-    <img class="logo" src="./../image/main-library-logo1.webp" height="70px" alt="Library Logo"
-        class="main-heading-four" /><br />
     <div>
         <img src="./../image/Icons/book-lending.png" height="40px" alt="Book Lending Icon" class="main-heading space-right-icon" />
         <h1 class="main-heading">BOOK LENDING</h1>
@@ -82,6 +86,7 @@
             <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="arrows-up-icons" />
         </a>
     </div>
+    <script src="https://kit.fontawesome.com/40a9124f1b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
