@@ -64,8 +64,63 @@ body {
   body {
     background-color: yellow;
   }
+  .logo {
+    height: 50px;
+  }
+  .library-name {
+    font-size: 15px;
+  }
+  .nav-menu {
+    display: none;
+  }
+}
+
+/* Large Mobile Devices */
+@media (min-width: 601px) and (max-width: 768px) {
+  body {
+    background-color: tomato;
+  }
+  .logo {
+    height: 55px;
+  }
+  .library-name {
+    font-size: 16px;
+  }
+  .nav-menu {
+    display: none;
+  }
 }
 
 /* Tablet Devices */
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+  .logo {
+    height: 60px;
+  }
+  .library-name {
+    font-size: 20px;
+  }
+  .nav-menu {
+    font-size: 12px;
+    margin-left: 14px;
+  }
+}
 
 /* Laptop Devices */
+@media (min-width: 993px) and (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+  .logo {
+    height: 70px;
+  }
+  .library-name {
+    font-size: 22px;
+  }
+  .nav-menu {
+    font-size: 16px;
+    margin-left: 19px;
+  }
+}
