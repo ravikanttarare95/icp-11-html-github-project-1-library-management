@@ -7,12 +7,13 @@
     <link rel="icon" href="./../image/main-library-logo1.webp">
     <title>Our Services & Facilities</title>
     <link rel="stylesheet" href="./../css/style.css" />
-    <link rel="stylesheet" href="./../css/services-style.css" />
+    <link rel="stylesheet" href="./../css/services.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <style>
         h2 {
+            font-size: 20px;
             color: #313d46;
             margin: 30px;
             font-family: Aclonica;
@@ -34,40 +35,44 @@
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap-reverse;
+        }
 
-            .main-photo-services {
-                background: radial-gradient(circle, rgba(161,227,249,1) 0%, rgba(232,248,253,0.8519782913165266) 80%);
-                border-radius: 5%;
-            }
+        .main-photo-services {
+            background: radial-gradient(circle, rgba(161, 227, 249, 1) 0%, rgba(232, 248, 253, 0.8519782913165266) 80%);
+            border-radius: 5%;
+        }
 
-            .container-services {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
+        .container-services {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
-                .services {
-                    background: linear-gradient(to bottom, #ffffff 40%, #a1e3f9 100%);
-                    height: 210px;
-                    width: 150px;
-                    margin: 20px;
-                    padding: 10px;
-                    border: 1px solid #3674B5;
-                    box-shadow: 0 2px 5px 3px #ccc;
-                    border-radius: 20px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: start;
-                    align-items: center;
-                    text-align: center;
-                }
+        .services {
+            background: linear-gradient(to bottom, #ffffff 40%, #a1e3f9 100%);
+            height: 210px;
+            width: 180px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #3674B5;
+            box-shadow: 0 2px 5px 3px #ccc;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            text-align: center;
+        }
 
-                .services:hover {
-                    transition: 0.15s;
-                    border: 1px solid #3674B5;
-                    box-shadow: 0 3px 5px 1px #666666;
-                }
-            }
+        .services-description {
+            color: #313d46;
+        }
+
+        .services:hover {
+            transition: 0.15s;
+            border: 1px solid #3674B5;
+            box-shadow: 0 3px 5px 1px #666666;
         }
 
         .container-facilities {
@@ -98,6 +103,38 @@
             border-radius: 50%;
             border: 2px solid #313d46;
         }
+
+        /* Mobile Device */
+        @media (max-width:600px) {
+            h2 {
+                text-align: center;
+                font-size: 17px;
+            }
+
+            h3 {
+                font-size: 13px;
+            }
+
+            .services-icons {
+                height: 50px;
+            }
+
+            .services-description {
+                font-size: 12px;
+            }
+
+            .services {
+                width: 118px;
+                height: 150px;
+            }
+        }
+
+        /* Large Mobile Devices*/
+        @media (min-width: 601px) and (max-width: 768px) {
+            body {
+                background-color: tomato;
+            }
+        }
     </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
@@ -125,35 +162,37 @@
     <div class="main-container-services">
         <div class="container-services">
             <div class="services">
-                <img src="./../image/icons/book-lending.png" height="80px" alt="Book Lending Icon" />
+                <img class="services-icons" src="./../image/icons/book-lending.png" height="80px"
+                    alt="Book Lending Icon" />
                 <a href="book-lending.html" target="_blank">
                     <h3>BOOK LENDING</h3>
-                    <p>Access to knowledge and entertainment for all our users...</p>
+                    <p class="services-description">Access to knowledge and entertainment for all our users...</p>
                 </a>
 
             </div>
             <div class="services">
-                <img src="./../image/icons/membership.png" height="80px" alt="Membership Icon" />
+                <img class="services-icons" src="./../image/icons/membership.png" height="80px" alt="Membership Icon" />
                 <a href="membership.html" target="_blank">
                     <h3>MEMBERSHIP</h3>
-                    <p>Unlock a World of Knowledge with Our Membership...</p>
+                    <p class="services-description">Unlock a World of Knowledge with Our Membership...</p>
                 </a>
 
             </div>
             <div class="services">
-                <img src="./../image/icons/book-bank.png" height="80px" alt="Book Bank Icon" />
+                <img class="services-icons" src="./../image/icons/book-bank.png" height="80px" alt="Book Bank Icon" />
                 <a href="book-bank.html" target="_blank">
                     <h3>BOOK BANK</h3>
-                    <p>Borrow textbooks and reference materials for an entire semester...</p>
+                    <p class="services-description">Borrow textbooks and reference materials for an entire semester...
+                    </p>
                 </a>
 
             </div>
             <div class="services">
-                <img src="./../image/icons/photocopying.png" height="80px" alt="
+                <img class="services-icons" src="./../image/icons/photocopying.png" height="80px" alt="
                 Photocopying Icon" />
                 <a href="photocopying.html" target="_blank">
                     <h3>PHOTOCOPYING</h3>
-                    <p>Colour, Black & White Photocopy...</p>
+                    <p class="services-description">Colour / Black & White Photocopy...</p>
                 </a>
 
             </div>

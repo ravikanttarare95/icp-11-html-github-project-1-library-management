@@ -125,7 +125,7 @@ body {
   }
 }
 
-/* Laptop Devices */
+/* Desktop Devices */
 @media (min-width: 1024px) {
   .nav-menu-icon {
     display: none;
