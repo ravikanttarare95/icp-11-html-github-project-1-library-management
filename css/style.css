@@ -5,24 +5,24 @@ body {
 .logo {
   border: 1px solid #e8f8fd;
   border-radius: 50%;
-  margin: 0 10px;
-  height: 70px;
+  margin-right: 10px;
+  height: 60px;
   display: inline-block;
   vertical-align: middle;
 }
 .library-name {
   color: #ffffff;
   font-family: Aclonica;
-  font-size: 22px;
+  font-size: 20px;
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
 }
 
 .navbar {
   position: sticky;
   top: 0;
-  padding: 5px;
-  font-size: 17px;
+  padding: 10px;
   background-color: #313d46;
   display: flex;
   flex-direction: row;
@@ -34,18 +34,20 @@ body {
 
   .nav-menu-container {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: end;
-    flex-wrap: wrap;
-    margin: 0 10px;
+    align-items: center;
   }
 }
 
 .nav-menu {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 20px;
+  font-size: 18px;
+  margin-left: 16px;
 }
 
 .nav-menu:hover {
@@ -58,17 +60,17 @@ body {
 .selected-nav-menu:hover {
   border-bottom: 2px solid yellow;
 }
+.nav-menu-icon {
+  height: 25px;
+}
 
 /* Mobile Devices */
 @media (max-width: 600px) {
-  body {
-    background-color: yellow;
-  }
   .logo {
-    height: 50px;
+    height: 60px;
   }
   .library-name {
-    font-size: 15px;
+    font-size: 20px;
   }
   .nav-menu {
     display: none;
@@ -81,10 +83,10 @@ body {
     background-color: tomato;
   }
   .logo {
-    height: 55px;
+    height: 60px;
   }
   .library-name {
-    font-size: 16px;
+    font-size: 20px;
   }
   .nav-menu {
     display: none;
@@ -102,9 +104,8 @@ body {
   .library-name {
     font-size: 20px;
   }
-  .nav-menu {
-    font-size: 12px;
-    margin-left: 14px;
+  .nav-menu-icon {
+    display: none;
   }
 }
 
@@ -114,13 +115,19 @@ body {
     background-color: green;
   }
   .logo {
-    height: 70px;
+    height: 60px;
   }
   .library-name {
-    font-size: 22px;
+    font-size: 20px;
   }
-  .nav-menu {
-    font-size: 16px;
-    margin-left: 19px;
+  .nav-menu-icon {
+    display: none;
+  }
+}
+
+/* Laptop Devices */
+@media (min-width: 1024px) {
+  .nav-menu-icon {
+    display: none;
   }
 }
