@@ -30,8 +30,9 @@
 
         .main-container-services {
             background: linear-gradient(170deg, rgba(255, 255, 255, 1) 0%, rgba(232, 248, 253, 1) 50%, rgba(255, 255, 255, 1) 100%);
-            padding: 20px 0;
+            /* padding: 20px 0; */
             display: flex;
+            flex-direction: row;
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap-reverse;
@@ -40,20 +41,22 @@
         .main-photo-services {
             background: radial-gradient(circle, rgba(161, 227, 249, 1) 0%, rgba(232, 248, 253, 0.8519782913165266) 80%);
             border-radius: 5%;
+            margin-bottom: 30px;
+            height: 250px;
         }
 
         .container-services {
+            width: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
 
         .services {
             background: linear-gradient(to bottom, #ffffff 40%, #a1e3f9 100%);
             height: 210px;
             width: 180px;
-            margin: 20px;
             padding: 10px;
             border: 1px solid #3674B5;
             box-shadow: 0 2px 5px 3px #ccc;
@@ -65,8 +68,13 @@
             text-align: center;
         }
 
+        .services-icons {
+            height: 70px;
+        }
+
         .services-description {
             color: #313d46;
+            font-size: 16px;
         }
 
         .services:hover {
@@ -111,12 +119,17 @@
                 font-size: 17px;
             }
 
-            h3 {
-                font-size: 13px;
+            .main-photo-services {
+                height: 240px;
+                margin-bottom: 10px;
             }
 
             .services-icons {
                 height: 50px;
+            }
+
+            h3 {
+                font-size: 13px;
             }
 
             .services-description {
@@ -124,15 +137,69 @@
             }
 
             .services {
-                width: 118px;
-                height: 150px;
+                width: 100%;
+                height: 120px;
+                margin: 10px;
             }
         }
 
         /* Large Mobile Devices*/
-        @media (min-width: 601px) and (max-width: 768px) {
-            body {
-                background-color: tomato;
+        @media (min-width:601px) and (max-width:768px) {
+            h2 {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .main-photo-services {
+                height: 240px;
+                margin-bottom: 0;
+            }
+
+            .services-icons {
+                height: 55px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            .services-description {
+                font-size: 14px;
+            }
+
+            .services {
+                width: 150px;
+                height: 170px;
+                margin: 25px;
+            }
+
+            .container-services {
+                width: 80%;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+
+        }
+
+        /* Tablet Devices*/
+        @media (min-width: 769px) and (max-width:992px) {
+            .main-photo-services {
+                height: 240px;
+                margin-bottom: 25px;
+            }
+
+            .services {
+                width: 150px;
+                height: 190px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+
+            .services-icons {
+                height: 65px;
             }
         }
     </style>
@@ -162,8 +229,7 @@
     <div class="main-container-services">
         <div class="container-services">
             <div class="services">
-                <img class="services-icons" src="./../image/icons/book-lending.png" height="80px"
-                    alt="Book Lending Icon" />
+                <img class="services-icons" src="./../image/icons/book-lending.png" alt="Book Lending Icon" />
                 <a href="book-lending.html" target="_blank">
                     <h3>BOOK LENDING</h3>
                     <p class="services-description">Access to knowledge and entertainment for all our users...</p>
@@ -192,13 +258,12 @@
                 Photocopying Icon" />
                 <a href="photocopying.html" target="_blank">
                     <h3>PHOTOCOPYING</h3>
-                    <p class="services-description">Colour / Black & White Photocopy...</p>
+                    <p class="services-description"> Black & White / Colour Photocopy...</p>
                 </a>
 
             </div>
         </div>
-        <img class="main-photo-services" src="./../image/photos/main-services.png" height="250px"
-            alt="Our Service Photo" />
+        <img class="main-photo-services" src="./../image/photos/main-services.png" alt="Our Service Photo" />
     </div>
     <br />
     <hr />

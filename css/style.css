@@ -66,6 +66,9 @@ body {
 
 /* Mobile Devices */
 @media (max-width: 600px) {
+  body {
+    background-color: yellow;
+  }
   .logo {
     height: 60px;
   }
@@ -126,7 +129,7 @@ body {
 }
 
 /* Desktop Devices */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .nav-menu-icon {
     display: none;
   }
