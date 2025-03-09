@@ -20,7 +20,10 @@
             width: 100%;
 
         }
-
+#intro-book-bank{
+    padding:5px;
+    text-align: justify;
+}
         .main-container-cards {
             background-color: #E8F8FD;
             margin: 3px;
@@ -139,13 +142,17 @@
 
         /* Mobile Device */
         @media (max-width:600px) {
+            .book-bank-main-img-container {
+                width: 350px;
+            }
+
             .container-cards {
                 width: 50%;
                 justify-content: space-evenly;
                 align-content: center;
                 margin-left: auto;
                 margin-right: auto;
-                gap:20px;
+                gap: 20px;
             }
 
             .cards-button {
@@ -194,9 +201,8 @@
     <div class="book-bank-main-img-container">
         <img class="book-bank-main-img" src="./../image/photos/main-book-bank-image.png" alt="Book Bank Photo" />
     </div>
-
-    <p><b>Borrow textbooks and reference materials for an entire semester to support your academic journey.</b></p>
-    <div>
+    <div id="intro-book-bank">
+        <p style="font-weight: bold;">Borrow textbooks and reference materials for an entire semester to support your academic journey.</p>
         <p>
             Our Library maintains a book bank mainly of 11<sup>th</sup> and 12<sup>th</sup> standard text books to help
             students belonging to
@@ -204,93 +210,91 @@
             textbooks and academic materials to students for an entire semester or academic year. This service ensures
             that all students, especially those in need, have access to essential study resources.<br /><br />
         </p>
-        <div class="main-container-cards">
-            <div class="available-books">
-                <img src="./../image/icons/books-stack-icon.png" alt="Books Stack Icon" class="books-stack-icon" />
-                Available Books!
+    </div>
+    <div class="main-container-cards">
+        <div class="available-books">
+            <img src="./../image/icons/books-stack-icon.png" alt="Books Stack Icon" class="books-stack-icon" />
+            Available Books!
+        </div>
+        <div class="container-cards">
+            <div class="cards-book-bank">
+                <img src="./../image/photos/card-photo-11.png" alt="11th std photo" class="cards-photos-book-bank" />
+                <a href="./class-11.html" class="cards-book-bank-heading">
+                    <button class="cards-button">CLASS 11</button>
+                </a>
             </div>
-            <div class="container-cards">
-                <div class="cards-book-bank">
-                    <img src="./../image/photos/card-photo-11.png" alt="11th std photo"
-                        class="cards-photos-book-bank" />
-                    <a href="./class-11.html" class="cards-book-bank-heading">
-                        <button class="cards-button">CLASS 11</button>
-                    </a>
-                </div>
-                <div class="cards-book-bank">
-                    <img src="./../image/photos/card-photo-12.png" alt="12th std photo"
-                        class="cards-photos-book-bank" />
-                    <a href="./class-12.html" class="cards-book-bank-heading">
-                        <button class="cards-button">CLASS 12</button>
-                    </a>
-                </div>
-                <div class="cards-book-bank">
-                    <img src="./../image/photos/card-photo-jeeee.png" alt="JEE photo" class="cards-photos-book-bank" />
+            <div class="cards-book-bank">
+                <img src="./../image/photos/card-photo-12.png" alt="12th std photo" class="cards-photos-book-bank" />
+                <a href="./class-12.html" class="cards-book-bank-heading">
+                    <button class="cards-button">CLASS 12</button>
+                </a>
+            </div>
+            <div class="cards-book-bank">
+                <img src="./../image/photos/card-photo-jeeee.png" alt="JEE photo" class="cards-photos-book-bank" />
 
-                    <a href="./jee.html" class="cards-book-bank-heading">
-                        <button class="cards-button">JEE Preparatory</button>
-                    </a>
-                </div>
-                <div class="cards-book-bank">
-                    <img src="./../image/photos/card-photo-neet.png" alt="NEET photo" class="cards-photos-book-bank" />
-                    <a href="./neet.html" class="cards-book-bank-heading">
-                        <button class="cards-button">NEET Preparatory</button>
-                    </a>
-                </div>
+                <a href="./jee.html" class="cards-book-bank-heading">
+                    <button class="cards-button">JEE Preparatory</button>
+                </a>
+            </div>
+            <div class="cards-book-bank">
+                <img src="./../image/photos/card-photo-neet.png" alt="NEET photo" class="cards-photos-book-bank" />
+                <a href="./neet.html" class="cards-book-bank-heading">
+                    <button class="cards-button">NEET Preparatory</button>
+                </a>
             </div>
         </div>
-        <div class="Access-container">
-            <div class="question-mark-image-container">
-                <img class="question-mark-image" src="./../image/photos/how-it-works-photo.png"
-                    alt="question-mark-photo" />
-            </div>
-            <div class="how-who-container">
-                <div class="how-it-works">
-                    <h2 class="subheading-book-bank"><u>How It Works</u></h2>
-                    <ol>
-                        <li><b>Register for the Service:</b> Visit the library and fill out the application form. </li>
-                        <br />
-                        <li><b>Submit Required Documents:</b> Student ID, proof of enrollment, and any financial aid
-                            documents (if
-                            needed).</li> <br />
-                        <li><b>Select Your Books:</b> Choose from the available list of textbooks and materials.</li>
-                        <br />
-                        <li><b>Borrow & Use:</b> Keep the books for the entire semester.</li> <br />
-                        <li><b>Return on Time:</b> Return the books in good condition at the end of the semester.</li>
-                        <br />
-                    </ol>
-                </div>
-                <div class="who-can-use">
-                    <h2 class="subheading-book-bank"><u>Who can use the Book Bank?</u></h2>
-                    <ul>
-                        <li>Registered students of the institution</li> <br />
-                        <li>Priority for economically disadvantaged students (if applicable)</li> <br />
-                        <li>Members (Students) with an active library membership</li> <br />
-                    </ul>
-                </div>
-            </div>
+    </div>
+    <div class="Access-container">
+        <div class="question-mark-image-container">
+            <img class="question-mark-image" src="./../image/photos/how-it-works-photo.png" alt="question-mark-photo" />
         </div>
-        <hr />
-        <div class="policy-container">
-            <div class="policy-content">
-                <h2 class="subheading-book-bank"><u>Book Bank Policies</u></h2>
-
+        <div class="how-who-container">
+            <div class="how-it-works">
+                <h2 class="subheading-book-bank"><u>How It Works</u></h2>
+                <ol>
+                    <li><b>Register for the Service:</b> Visit the library and fill out the application form. </li>
+                    <br />
+                    <li><b>Submit Required Documents:</b> Student ID, proof of enrollment, and any financial aid
+                        documents (if
+                        needed).</li> <br />
+                    <li><b>Select Your Books:</b> Choose from the available list of textbooks and materials.</li>
+                    <br />
+                    <li><b>Borrow & Use:</b> Keep the books for the entire semester.</li> <br />
+                    <li><b>Return on Time:</b> Return the books in good condition at the end of the semester.</li>
+                    <br />
+                </ol>
+            </div>
+            <div class="who-can-use">
+                <h2 class="subheading-book-bank"><u>Who can use the Book Bank?</u></h2>
                 <ul>
-                    <li><b>Loan Duration:</b> Full semester or academic year</li> <br />
-                    <li><b>Borrowing Limit:</b> Up to 4 textbooks per student</li> <br />
-                    <li><b>Renewals:</b> Allowed based on availability</li> <br />
-                    <li><b>Late Returns:</b> Subject to fines if not returned on time</li> <br />
-                    <li><b>Book Condition:</b> Books must be returned without significant damage; lost/damaged books
-                        must be
-                        compensated</li> <br />
+                    <li>Registered students of the institution</li> <br />
+                    <li>Priority for economically disadvantaged students (if applicable)</li> <br />
+                    <li>Members (Students) with an active library membership</li> <br />
                 </ul>
             </div>
-            <div class="policy-img-container">
-                <img class="policy-image" src="./../image/photos/policy.png" alt="policies photo" />
-            </div>
         </div>
-        <hr />
     </div>
+    <hr />
+    <div class="policy-container">
+        <div class="policy-content">
+            <h2 class="subheading-book-bank"><u>Book Bank Policies</u></h2>
+
+            <ul>
+                <li><b>Loan Duration:</b> Full semester or academic year</li> <br />
+                <li><b>Borrowing Limit:</b> Up to 4 textbooks per student</li> <br />
+                <li><b>Renewals:</b> Allowed based on availability</li> <br />
+                <li><b>Late Returns:</b> Subject to fines if not returned on time</li> <br />
+                <li><b>Book Condition:</b> Books must be returned without significant damage; lost/damaged books
+                    must be
+                    compensated</li> <br />
+            </ul>
+        </div>
+        <div class="policy-img-container">
+            <img class="policy-image" src="./../image/photos/policy.png" alt="policies photo" />
+        </div>
+    </div>
+    <hr />
+
     <br />
     <div class="arrows-buttons-container">
         <a class="arrows-up-icons" href="#top">
