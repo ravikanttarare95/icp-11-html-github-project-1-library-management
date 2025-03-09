@@ -9,21 +9,8 @@
     <link rel="stylesheet" href="./../css/style.css" />
     <link rel="stylesheet" href="./../css/services.css" />
     <style>
-        .service-logo {
-            height: 50px;
-            border-radius: 50%;
-            position: relative;
-            position: absolute;
-            left: 0;
-            top: 0;
-            margin-top: 12.5px;
-            margin-left: 12.5px;
-        }
-
         .book-bank-main-img-container {
             width: 500px;
-            display: flex;
-            flex-direction: row;
             margin-left: auto;
             margin-right: auto;
         }
@@ -34,19 +21,12 @@
 
         }
 
-        .available-books {
-            padding: 5px 10px;
+        .main-container-cards {
+            background-color: #E8F8FD;
+            margin: 3px;
+            border: #313d46 1px solid;
             border-radius: 5px;
-            background-color: #A1E3F9;
-            border: #313d46 0.5px solid;
-            color: #313d46;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            position: absolute;
-            left: 42%;
-            right: 42%;
-            top: -20px;
+            box-shadow: 0 2px 5px 1px #ccc;
         }
 
         .books-stack-icon {
@@ -55,16 +35,21 @@
             margin-right: 7px;
         }
 
-        .main-container-cards {
-            background-color: #E8F8FD;
-            margin: 3px;
-            padding: 10px 30px;
-            border: #313d46 0.5px solid;
-            border-radius: 5px;
-            position: relative;
+        .available-books {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px 0;
+            border-radius: 4px 4px 0 0;
+            background-color: #A1E3F9;
+            border-bottom: #313d46 1px solid;
+            color: #313d46;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         .container-cards {
+            padding: 20px;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -73,10 +58,9 @@
 
         .cards-book-bank {
             background-color: #ffffff;
-            margin: 50px;
             padding: 0px;
             text-align: center;
-            width: 200px;
+            width: 160px;
             border: 1px solid #313d46;
             border-radius: 10px;
             display: inline-block;
@@ -93,6 +77,7 @@
         .cards-button {
             background-color: #313d46;
             color: #fff;
+            font-size: 15px;
             font-weight: bold;
             padding: 20px 0px;
             border: none;
@@ -151,6 +136,38 @@
                 filter: drop-shadow(8px 10px 5px #ccc);
             }
         }
+
+        /* Mobile Device */
+        @media (max-width:600px) {
+            .container-cards {
+                width: 50%;
+                justify-content: space-evenly;
+                align-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                gap:20px;
+            }
+
+            .cards-button {
+                font-size: small;
+            }
+        }
+
+        /* Large Mobile Device */
+        @media (min-width:601px) and (max-width:768px) {
+            .container-cards {
+                width: 63%;
+                justify-content: space-evenly;
+                margin-left: auto;
+                align-content: center;
+                margin-right: auto;
+                gap: 50px;
+            }
+
+            .cards-button {
+                font-size: smaller;
+            }
+        }
     </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
@@ -188,10 +205,10 @@
             that all students, especially those in need, have access to essential study resources.<br /><br />
         </p>
         <div class="main-container-cards">
-            <span class="available-books">
+            <div class="available-books">
                 <img src="./../image/icons/books-stack-icon.png" alt="Books Stack Icon" class="books-stack-icon" />
                 Available Books!
-            </span>
+            </div>
             <div class="container-cards">
                 <div class="cards-book-bank">
                     <img src="./../image/photos/card-photo-11.png" alt="11th std photo"
