@@ -18,17 +18,18 @@
         .book-bank-main-img {
             filter: drop-shadow(15px 10px 5px #ccc);
             width: 100%;
-
         }
 
-        #intro-book-bank {
-            padding: 5px;
+        .margin-10 {
+            margin: 0 10px;
+        }
+
+        .intro-book-bank {
             text-align: justify;
         }
 
         .main-container-cards {
             background-color: #E8F8FD;
-            margin: 3px;
             border: #313d46 1px solid;
             border-radius: 5px;
             box-shadow: 0 2px 5px 1px #ccc;
@@ -113,12 +114,6 @@
             }
         }
 
-        .how-who-container {}
-
-        .how-it-works {}
-
-        .who-can-use {}
-
         .subheading-book-bank {
             margin-left: 25px;
         }
@@ -160,11 +155,28 @@
             .cards-button {
                 font-size: small;
             }
+        }
+
+        /* All Mobile Devices */
+        @media(max-width:768px) {
             .question-mark-image-container {
                 width: 350px;
             }
+
             .Access-container {
                 flex-wrap: wrap;
+            }
+
+            .policy-container {
+                flex-wrap: wrap-reverse;
+            }
+
+            .policy-img-container {
+                width: 330px;
+            }
+
+            .policy-content {
+                margin-top: 0;
             }
         }
 
@@ -182,18 +194,7 @@
             .cards-button {
                 font-size: smaller;
             }
-
-            .question-mark-image-container {
-                width: 350px;
-            }
-
-            .Access-container {
-                flex-wrap: wrap;
-            }
         }
-
-        /* Tablet Device */
-        @media (min-width:601px) and (max-width:768px) {}
     </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
@@ -220,7 +221,7 @@
     <div class="book-bank-main-img-container">
         <img class="book-bank-main-img" src="./../image/photos/main-book-bank-image.png" alt="Book Bank Photo" />
     </div>
-    <div id="intro-book-bank">
+    <div class="intro-book-bank margin-10">
         <p style="font-weight: bold;">Borrow textbooks and reference materials for an entire semester to support your
             academic journey.</p>
         <p>
@@ -231,7 +232,7 @@
             that all students, especially those in need, have access to essential study resources.<br /><br />
         </p>
     </div>
-    <div class="main-container-cards">
+    <div class="main-container-cards margin-10">
         <div class="available-books">
             <img src="./../image/icons/books-stack-icon.png" alt="Books Stack Icon" class="books-stack-icon" />
             Available Books!
@@ -268,7 +269,7 @@
         <div class="question-mark-image-container">
             <img class="question-mark-image" src="./../image/photos/how-it-works-photo.png" alt="question-mark-photo" />
         </div>
-        <div class="how-who-container">
+        <div class="how-who-container margin-10">
             <div class="how-it-works">
                 <h2 class="subheading-book-bank"><u>How It Works</u></h2>
                 <ol>
@@ -295,7 +296,7 @@
         </div>
     </div>
     <hr />
-    <div class="policy-container">
+    <div class="policy-container margin-10">
         <div class="policy-content">
             <h2 class="subheading-book-bank"><u>Book Bank Policies</u></h2>
 
@@ -314,8 +315,6 @@
         </div>
     </div>
     <hr />
-
-    <br />
     <div class="arrows-buttons-container">
         <a class="arrows-up-icons" href="#top">
             <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="arrows-up-icons" />
