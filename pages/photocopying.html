@@ -7,12 +7,75 @@
     <link rel="icon" href="image/main-library-logo1.webp">
     <title>Photocopying</title>
     <link rel="stylesheet" href="./../css/style.css" />
-    <link rel="stylesheet" href="./../css/services-style.css" />
+    <link rel="stylesheet" href="./../css/services.css" />
     <style>
-        .logo {
-            border-radius: 50%;
-            display: block;
-            margin: auto;
+        .Photocopying-img {
+            width: 400px;
+        }
+
+        .photocopying-content {
+            font-size: 16px;
+        }
+
+        /* Mobile Device */
+        @media (max-width:600px) {
+            h1 {
+                font-size: 18px;
+            }
+
+            .Photocopying-img {
+                width: 360px;
+            }
+
+            .photocopying-content {
+                font-size: 14px;
+            }
+        }
+
+        /* Large Mobile Device */
+        @media (min-width:601px) and (max-width:768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .Photocopying-img {
+                width: 370px;
+            }
+
+            .photocopying-content {
+                font-size: 15px;
+            }
+        }
+
+        /* Tablets Device */
+        @media (min-width:769px) and (max-width:992px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .Photocopying-img {
+                width: 380px;
+            }
+
+            .photocopying-content {
+                font-size: 15px;
+            }
+        }
+
+        /* Laptop Device */
+        @media (min-width:993px) and (max-width:1024px) {
+            h1 {
+                font-size: 24px;
+            }
+            .Photocopying-img {
+                width: 390px;
+            }
+        }
+              /* Desktop Device */
+              @media (min-width:1025px) {
+                h1 {
+                font-size: 26px;
+            }
         }
     </style>
 </head>
@@ -23,22 +86,25 @@
         <div>
             <img class="logo" src="./../image/main-library-logo1.webp" height="50px" alt="Library Logo" />
         </div>
-        <ul class="nav-links">
-            <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+        <ul class="nav-menu-container">
+            <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+            </li>
             <li><a href="./book-lending.html" class="nav-menu">BOOK LENDING</a></li>
             <li><a href="./membership.html" class="nav-menu">MEMBERSHIP</a></li>
             <li><a href="./book-bank.html" class="nav-menu">BOOK BANK</a></li>
-            <li><a href="./photocopying.html" class="nav-menu selected-nav-menu">PHOTOCOPYING</a></li>            
+            <li><a href="./photocopying.html" class="nav-menu selected-nav-menu">PHOTOCOPYING</a></li>
+            <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
         </ul>
     </div>
     <div>
-        <img src="./../image/Icons/photocopying.png" height="40px" alt="Printer Icon" class="main-heading space-right-icon" />
+        <img src="./../image/Icons/photocopying.png" height="40px" alt="Printer Icon"
+            class="main-heading space-right-icon" />
         <h1 class="main-heading">PHOTOCOPYING </h1>
     </div>
-    <div>
-        <img src="./../image/photos/main-photocopying.jpg" height="300px" alt="Photocopy Machine Photo" />
+    <div class="Photocopying-img-container">
+        <img class="Photocopying-img" src="./../image/photos/main-photocopying.jpg" alt="Photocopy Machine Photo" />
     </div>
-    <div>
+    <div class="photocopying-content">
         <ul>
             <li>Our Library offers photocopying service to all its members, walk-in users and others.</li><br />
             <li>Only single copy of journal articles and book chapters are provided for private study and research
