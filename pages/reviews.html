@@ -31,14 +31,14 @@
      .form{
         
         font-size: 30px;
-        background-color: rgb(239, 239, 239);
+       
         margin: 40px;
         width: 600px;
         text-align: center;
         padding: 30px;
         border: 0px solid black;
        border-radius: 10px;
-       box-shadow: 0px 6px 5px 6px #4e555a;
+       box-shadow: 4px 4px 4px 4px  rgb(11, 142, 194);
      }
      .submit-button{
         background-color: rgb(224, 224, 224);
@@ -49,7 +49,7 @@
      }
 
      .review-div{
-        background-color: rgb(240, 236, 236);
+        background-color: rgb(228, 242, 247);
      display: flex;
      flex-direction: row;
      }
@@ -61,14 +61,15 @@
      margin: 30px;
      padding: 20px;   
      border-radius: 10px; 
-     box-shadow: -1px 3px 5px 5px #c9c9c9;
+     box-shadow: -1px 3px 5px 5px #0488a6;
      }
      .main-photo{      
-       
+     
         text-align: center;
         align-items: center;
      }
  .photo-section{
+  
    display: flex;
     flex-direction:row;
     padding:10px ;
@@ -76,7 +77,7 @@
     }
  
  .photo-div{
-    box-shadow: 0px 6px 5px 6px #c2c2c2;
+    box-shadow: 1px 1px 2px 2px  rgb(0, 52, 80);
     background-color: rgb(255, 255, 255);
     margin: 20px;
    padding: 20px;
@@ -89,20 +90,23 @@
 </head>
 
 <body>
-    <div class="bg-color-library-name">
-        <img class="logo" src="./../image/main-library-logo1.webp" height="100px" alt="Library Logo" />
-
-        <p id="main-heading-library">SARVOTTAM <br />LIBRARY</p>
-    </div>
     <div class="navbar">
-        <a href="./../index.html" class="nav-menu">HOME</a>
-        <a href="events.html" class="nav-menu">EVENTS</a>
-        <a href="catalog.html" class="nav-menu">CATALOG</a>
-        <a href="our-services-and-facilities.html" class="selected-nav-menu">OUR-SERVICES-&-FACILITIES</a>
-        <a href="about-us.html" class="nav-menu">ABOUT-US</a>
-        <a href="reviews.html" class="nav-menu" >REVIES</a>
-        <a href="contact-us.html" class="nav-menu">CONTACT-US</a>
-        <a href="library-rules.html" class="nav-menu">LIBRARY-RULES</a>
+        <div>
+            <img class="logo" src="./../image/main-library-logo1.webp" alt="Library Logo" />
+            <p class="library-name">SARVOTTAM <br>LIBRARY</p>
+        </div>
+        <ul class="nav-menu-container">
+            <li><a href="./../index.html" class="nav-menu">Home</a></li>
+            <li><a href="events.html" class="nav-menu">Events</a></li>
+            <li><a href="catalog.html" class="nav-menu">Catalog</a></li>
+            <li><a href="our-services-and-facilities.html" class="nav-menu">Services &
+                    Facilities</a></li>
+            <li><a href="about-us.html" class="nav-menu">About Us</a></li>
+            <li><a href="reviews.html" class="nav-menu selected-nav-menu">Reviews</a></li>
+            <li><a href="contact-us.html" class="nav-menu">Contact US</a></li>
+            <li><a href="library-rules.html" class="nav-menu">Library Rules</a></li>
+            <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
+        </ul>
     </div>
 
     <div class="first-heading">
@@ -233,3 +237,4 @@
    
        </body>
        </html>
+       
