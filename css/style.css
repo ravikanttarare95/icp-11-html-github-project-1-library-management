@@ -47,7 +47,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
-  margin-left: 16px;
+  margin-left: 15px;
 }
 
 .nav-menu:hover {
@@ -72,9 +72,7 @@ body {
   .logo {
     height: 60px;
   }
-  .library-name {
-    font-size: 20px;
-  }
+
   .nav-menu {
     display: none;
   }
@@ -88,9 +86,7 @@ body {
   .logo {
     height: 60px;
   }
-  .library-name {
-    font-size: 20px;
-  }
+
   .nav-menu {
     display: none;
   }
@@ -104,9 +100,7 @@ body {
   .logo {
     height: 60px;
   }
-  .library-name {
-    font-size: 20px;
-  }
+
   .nav-menu-icon {
     display: none;
   }
@@ -120,9 +114,7 @@ body {
   .logo {
     height: 60px;
   }
-  .library-name {
-    font-size: 20px;
-  }
+
   .nav-menu-icon {
     display: none;
   }

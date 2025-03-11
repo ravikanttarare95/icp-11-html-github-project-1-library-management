@@ -17,25 +17,42 @@
             display: block;
             margin: auto;
         }
+
+        .book-lending-image {
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 1px #ccc;
+        }
+
+        /* Mobile Device */
+        @media(max-width:600px) {
+            .book-lending-image {
+                height: 220px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="navbar">
         <div>
-            <img class="logo" src="./../image/main-library-logo1.webp" height="50px" alt="Library Logo" />
+            <img class="logo" src="./../image/main-library-logo1.webp" alt="Library Logo" />
         </div>
         <ul class="nav-menu-container">
             <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="./book-lending.html" class="nav-menu selected-nav-menu">BOOK LENDING</a></li>
-            <li><a href="./membership.html" class="nav-menu">MEMBERSHIP</a></li>
-            <li><a href="./book-bank.html" class="nav-menu">BOOK BANK</a></li>
-            <li><a href="./photocopying.html" class="nav-menu">PHOTOCOPYING</a></li> 
-            <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>           
+            <li><a href="./book-lending.html" class="nav-menu selected-nav-menu">Book Lending</a></li>
+            <li><a href="./membership.html" class="nav-menu">Membership</a></li>
+            <li><a href="./book-bank.html" class="nav-menu">Book Bank</a></li>
+            <li><a href="./photocopying.html" class="nav-menu">Photocopying</a></li>
+            <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
         </ul>
     </div>
     <div class="heading-container">
-        <img src="./../image/Icons/book-lending.png" height="40px" alt="Book Lending Icon" class="icons-left-to-headings" />
+        <img src="./../image/Icons/book-lending.png" height="40px" alt="Book Lending Icon"
+            class="icons-left-to-headings" />
         <h1 class="headings">BOOK LENDING</h1>
     </div>
     <br />
@@ -43,7 +60,7 @@
     is to provide a seamless borrowing experience, ensuring access to knowledge and entertainment for all our users.
     <br />
     <p>
-        <img src="./../image/photos/main-book-lending.jpg" height="300px" alt="Book Lending Photo" />
+        <img class="book-lending-image" src="./../image/photos/main-book-lending.jpg" alt="Book Lending Photo" />
     </p>
     <p>
     <h2><u>How It Works</u></h2>
@@ -85,8 +102,9 @@
         <li>Enjoy a 14-day digital loan period, auto-return enabled.</li><br />
     </ul>
     </p>
+    <hr />
     <div class="arrows-buttons-container">
-        <a href="#top"  class="arrows-up-hyperlink" >
+        <a href="#top" class="arrows-up-hyperlink">
             <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="arrows-up-icons" />
         </a>
     </div>

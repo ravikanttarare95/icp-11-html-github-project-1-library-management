@@ -14,6 +14,8 @@
     <style>
         .membership-main-image {
             height: 300px;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 1px #ccc;
         }
 
         table {
@@ -38,19 +40,17 @@
             flex-direction: column;
         }
 
-        .heading-form-container {}
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
 
-        .form-container {}
-
-        .inputs {
+        .input-fullname {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 30px;
         }
-
-        .input-name {}
-
 
         /* Mobile Device */
         @media(max-width:600px) {
@@ -76,10 +76,10 @@ background-color: #E8F8FD;-->
         </div>
         <ul class="nav-menu-container">
             <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="./book-lending.html" class="nav-menu">BOOK LENDING</a></li>
-            <li><a href="./membership.html" class="nav-menu selected-nav-menu">MEMBERSHIP</a></li>
-            <li><a href="./book-bank.html" class="nav-menu">BOOK BANK</a></li>
-            <li><a href="./photocopying.html" class="nav-menu">PHOTOCOPYING</a></li>
+            <li><a href="./book-lending.html" class="nav-menu">Book Lending</a></li>
+            <li><a href="./membership.html" class="nav-menu selected-nav-menu">Membership</a></li>
+            <li><a href="./book-bank.html" class="nav-menu">Book Bank</a></li>
+            <li><a href="./photocopying.html" class="nav-menu">Photocopying</a></li>
             <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
         </ul>
     </div>
@@ -144,54 +144,54 @@ background-color: #E8F8FD;-->
         <br />
         <hr />
         <div class="form-main-container">
-            <div class="heading-form-container">
+            <div>
                 <img src="./../image/Icons/member.png" height="35px" alt="Benefits Icon"
                     class="icons-left-to-headings" />
                 <h2 class="headings">Become our Member:</h2>
             </div>
             <form class="form-container">
-                <p class="inputs">
+                <p class="input-fullname">
                     <label for="FullName">Full Name:</label>
-                    <input type="text" id="FullName" placeholder="First Name" required class="input-name" />
-                    <input type="text" id="FullName" placeholder="Middle Name" required class="input-name" />
-                    <input type="text" id="FullName" placeholder="Last Name" required class="input-name" />
+                    <input type="text" id="FullName" placeholder="First Name" required />
+                    <input type="text" id="FullName" placeholder="Middle Name" required class="fullname" />
+                    <input type="text" id="FullName" placeholder="Last Name" required class="fullname" />
                 </p>
-                <p class="inputs">
+                <p>
                     <label for="E-mail">E-mail ID:</label>
                     <input type="email" id="E-mail" required />
                 </p>
-                <p class="inputs">
+                <p>
                     <label for="Contact">Contact Number:</label>
                     <input type="number" id="Contact" required />
                 </p>
-                <p class="inputs">
+                <p>
                     <label for="AadharNumber">Aadhar Number:</label>
                     <input type="number" id="AadharNumber" required />
                 </p>
-                <p class="inputs">
+                <p>
                     <label for="Address">Address:</label>
                     <input type="text" id="Address" required />
                 </p>
-                <p class="inputs">
+                <p>
                     <label for="ChoosePlan">Choose a Plan:</label>
-                    <select id="ChoosePlan">
-                        <option valur="">Choose a Plan:</option>
+                    <select id="ChoosePlan" required>
+                        <option value="">Choose a Plan:</option>
                         <option>Basic</option>
                         <option>Premium</option>
                         <option>Family Plan</option>
                     </select>
                 </p>
-                <div class="inputs">
+                <div>
                     <p>
                         After payment is successfull you will recieve an ID and Password in your email and become our
                         member.
                     </p>
-                    <input type="submit" value="Pay & Join" />
+                    <input type="submit" value="Pay & Join" style="padding: 5px 10px;" />
                 </div>
             </form>
-
         </div>
         <br />
+        <hr />
         <div class="arrows-buttons-container">
             <a class="arrows-up-hyperlink" href="#top">
                 <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="arrows-up-icons" />
