@@ -109,6 +109,19 @@
             border: 2px solid #313d46;
         }
 
+        .videos-container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .video{
+            margin: 10px;
+            height: 200px;
+            width: 400px;
+        }
+
         /* Mobile Device */
         @media (max-width:600px) {
             h1 {
@@ -359,10 +372,29 @@
         </div>
     </div>
     <hr />
-    <div style="text-align: center;">
-        <video controls poster="./../videos/library-advantages.webp" height="300px">
-            <source src="./../videos/library-benifits.mp4" type="video/mp4" />
+    <div class="videos-container">
+
+        <video controls poster="./../videos/library-advantages.webp" class="video" >
+            <source src="./../videos/library-benifits.mp4" type="video/mp4"/>
         </video>
+
+        <iframe  poster="./../videos/library-advantages.webp" width="560" height="315" src="https://www.youtube.com/embed/a0pj1DpR8vM?si=RaB-gNMTba7Jm9JT"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video">
+        </iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s00_GYIRZjI?si=4eMZMRJAlTTZa0Va"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video">
+        </iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s00_GYIRZjI?si=4eMZMRJAlTTZa0Va"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video">
+        </iframe>
     </div>
     <div class="arrows-buttons-container">
         <a class=" button-previous" href="catalog.html">
