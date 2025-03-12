@@ -1,0 +1,91 @@
+.heading-container {
+margin: 10px 0;
+}
+h1 {
+  font-size: 24px;
+  color: #313d46;
+  font-family: Aclonica;
+}
+h2 {
+  font-size: 20px;
+  color: #3674b5;
+}
+.icons-left-to-headings {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.headings {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.arrows-buttons {
+  margin: 0 10px;
+  color: #00264d;
+  padding: 5px 10px;
+  width: 130px;
+  border: #00264d solid 0.5px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px 0px #ccc;
+  cursor: pointer;
+  font-weight: bold;
+
+  .arrows-icons {
+    height: 15px;
+    width: 25px;
+    vertical-align: middle;
+  }
+}
+.text-left {
+  text-align: start;
+}
+.text-right {
+  text-align: end;
+}
+.arrows-buttons:hover {
+  transition: 0.1s;
+  border: #00264d solid 1.5px;
+  box-shadow: 0 0px 1px 1px #666666;
+}
+.arrows-buttons-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-previous {
+  margin-right: auto;
+}
+.arrows-up-hyperlink{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arrows-up-icons {
+  height: 35px;
+}
+
+.button-next {
+  margin-left: auto;
+}
+/* Mobile Device */
+@media (max-width: 600px) {
+  .arrows-up-icons {
+    height: 25px;
+  }
+  .arrows-buttons {
+    width: 100px;
+    font-size: 10px;
+    padding: 3px 7px;
+  }
+}
+/*  Large Mobile Device */
+@media (min-width: 601px) and (max-width: 768px) {
+  .arrows-up-icons {
+    height: 30px;
+  }
+  .arrows-buttons {
+    width: 120px;
+  }
+}

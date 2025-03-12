@@ -6,21 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./../image/main-library-logo1.webp">
     <title>Book Lending</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/services.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <style>
+        .logo {
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+
+        .book-lending-image {
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 1px #ccc;
+        }
+
+        /* Mobile Device */
+        @media(max-width:600px) {
+            .book-lending-image {
+                height: 220px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <img src="./../image/main-library-logo1.webp" height="69px" alt="Library Logo" /><br/>
-    
-    <h2>BOOK LENDING</h2>
-    <img src="./../image/Icons/book-lending.png" height="40px" alt="Book Lending Icon"/><br/>
+    <div class="navbar">
+        <div>
+            <img class="logo" src="./../image/main-library-logo1.webp" alt="Library Logo" />
+        </div>
+        <ul class="nav-menu-container">
+            <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="./book-lending.html" class="nav-menu selected-nav-menu">Book Lending</a></li>
+            <li><a href="./membership.html" class="nav-menu">Membership</a></li>
+            <li><a href="./book-bank.html" class="nav-menu">Book Bank</a></li>
+            <li><a href="./photocopying.html" class="nav-menu">Photocopying</a></li>
+            <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
+        </ul>
+    </div>
+    <div class="heading-container">
+        <img src="./../image/Icons/book-lending.png" height="40px" alt="Book Lending Icon"
+            class="icons-left-to-headings" />
+        <h1 class="headings">BOOK LENDING</h1>
+    </div>
+    <br />
     Welcome to our Book Lending Service, where library members can borrow books and other materials with ease. Our goal
     is to provide a seamless borrowing experience, ensuring access to knowledge and entertainment for all our users.
     <br />
     <p>
-        <img src="./../image/photos/main-book-lending.jpg" height="300px" alt="Book Lending Photo" />
+        <img class="book-lending-image" src="./../image/photos/main-book-lending.jpg" alt="Book Lending Photo" />
     </p>
     <p>
-    <h3><u>How It Works</u></h3>
+    <h2><u>How It Works</u></h2>
     <ol type="1">
         <li>Browse our online catalog or visit the library to find the book you want.</li><br />
         <li>Check the book's availability.</li><br />
@@ -31,7 +74,7 @@
     </p>
     <hr />
     <p>
-    <h3><u>Borrowing Rules & Policies</u></h3>
+    <h2><u>Borrowing Rules & Policies</u></h2>
     <ul>
         <li><b>Membership Requirement:</b> Only registered library members can borrow books.</li><br />
         <li><b>Loan Period:</b> Books can be borrowed for 14-30 days, depending on the book category.</li><br />
@@ -43,7 +86,7 @@
     </p>
     <hr />
     <p>
-    <h3><u>Book Return Process</u></h3>
+    <h2><u>Book Return Process</u></h2>
     <ol type="i">
         <li>Return books at the circulation desk or drop box.</li><br />
         <li>Ensure books are returned in good condition.</li><br />
@@ -52,14 +95,20 @@
     </p>
     <hr />
     <p>
-    <h3><u>Digital & E-Book Lending</u></h3>
+    <h2><u>Digital & E-Book Lending</u></h2>
     <ul type="circle">
         <li>Access thousands of e-books and audiobooks.</li><br />
         <li>Borrow digital books through our website.</li><br />
         <li>Enjoy a 14-day digital loan period, auto-return enabled.</li><br />
     </ul>
     </p>
-
+    <hr />
+    <div class="arrows-buttons-container">
+        <a href="#top" class="arrows-up-hyperlink">
+            <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="arrows-up-icons" />
+        </a>
+    </div>
+    <script src="https://kit.fontawesome.com/40a9124f1b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

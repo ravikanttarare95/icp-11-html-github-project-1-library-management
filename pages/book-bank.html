@@ -6,63 +6,324 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./../image/main-library-logo1.webp">
     <title>Book Bank</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/services.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <style>
+        .book-bank-main-img-container {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .book-bank-main-img {
+            filter: drop-shadow(15px 10px 5px #ccc);
+            width: 100%;
+        }
+
+        .margin-10 {
+            margin: 0 10px;
+        }
+
+        .intro-book-bank {
+            text-align: justify;
+        }
+
+        .main-container-cards {
+            background-color: #E8F8FD;
+            border: #313d46 1px solid;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 1px #ccc;
+        }
+
+        .books-stack-icon {
+            vertical-align: middle;
+            height: 35px;
+            margin-right: 7px;
+        }
+
+        .available-books {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px 0;
+            border-radius: 4px 4px 0 0;
+            background-color: #A1E3F9;
+            border-bottom: #313d46 1px solid;
+            color: #313d46;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .container-cards {
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .cards-book-bank {
+            background-color: #ffffff;
+            padding: 0px;
+            text-align: center;
+            width: 160px;
+            border: 1px solid #313d46;
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: -1px 3px 7px 1px #666666;
+        }
+
+        .cards-photos-book-bank {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 4%, rgba(232, 248, 253, 1) 35%, rgba(54, 116, 181, 1) 100%);
+        }
+
+        .cards-button {
+            background-color: #313d46;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 20px 0px;
+            border: none;
+            border-radius: 0 0 7px 7px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .cards-book-bank:hover {
+            transition: 0.2s;
+            box-shadow: -2px 3px 2px 1px #313d46;
+            border: #313d46 0.5px solid;
+        }
+
+        .Access-container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .question-mark-image-container {
+            width: 430px;
+
+            .question-mark-image {
+                width: 100%;
+                filter: drop-shadow(0 10px 5px #666);
+            }
+        }
+
+        .subheading-book-bank {
+            margin-left: 25px;
+        }
+
+        .policy-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .policy-content {
+            margin-top: 100px;
+        }
+
+        .policy-img-container {
+            width: 400px;
+
+            .policy-image {
+                width: 100%;
+                filter: drop-shadow(8px 10px 5px #ccc);
+            }
+        }
+
+        /* Mobile Device */
+        @media (max-width:600px) {
+            .book-bank-main-img-container {
+                width: 350px;
+            }
+
+            .container-cards {
+                width: 50%;
+                justify-content: space-evenly;
+                align-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                gap: 20px;
+            }
+
+            .cards-button {
+                font-size: small;
+            }
+        }
+
+        /* All Mobile Devices */
+        @media(max-width:768px) {
+            .question-mark-image-container {
+                width: 350px;
+            }
+
+            .Access-container {
+                flex-wrap: wrap;
+            }
+
+            .policy-container {
+                flex-wrap: wrap-reverse;
+            }
+
+            .policy-img-container {
+                width: 330px;
+            }
+
+            .policy-content {
+                margin-top: 0;
+            }
+        }
+
+        /* Large Mobile Device */
+        @media (min-width:601px) and (max-width:768px) {
+            .container-cards {
+                width: 63%;
+                justify-content: space-evenly;
+                margin-left: auto;
+                align-content: center;
+                margin-right: auto;
+                gap: 50px;
+            }
+
+            .cards-button {
+                font-size: smaller;
+            }
+        }
+    </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
 
 <body>
-    <img src="./../image/main-library-logo1.webp" height="69px" alt="Library Logo" /><br />
-
-    <h2>BOOK BANK </h2>
-    <img src="./../image/Icons/book-bank.png" height="40px" alt="Book Bank Icon" />
-    <h3>Borrow textbooks and reference materials for an entire semester to support your academic journey.</h3>
-    <div>
+    <div class="navbar">
+        <div>
+            <img class="logo" src="./../image/main-library-logo1.webp" height="50px" alt="Library Logo" />
+        </div>
+        <ul class="nav-menu-container">
+            <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li><a href="./book-lending.html" class="nav-menu">Book Lending</a></li>
+            <li><a href="./membership.html" class="nav-menu">Membership</a></li>
+            <li><a href="./book-bank.html" class="nav-menu selected-nav-menu">Book Bank</a></li>
+            <li><a href="./photocopying.html" class="nav-menu">Photocopying</a></li>
+            <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
+        </ul>
+    </div>
+    <div class="heading-container">
+        <img src="./../image/Icons/book-bank.png" height="40px" alt="Book Bank Icon" class="icons-left-to-headings" />
+        <h1 class="headings">BOOK BANK </h1>
+    </div>
+    <div class="book-bank-main-img-container">
+        <img class="book-bank-main-img" src="./../image/photos/main-book-bank-image.png" alt="Book Bank Photo" />
+    </div>
+    <div class="intro-book-bank margin-10">
+        <p style="font-weight: bold;">Borrow textbooks and reference materials for an entire semester to support your
+            academic journey.</p>
         <p>
-            Our Library maintains a book bank mainly of undergraduate level text books to help students belonging to
+            Our Library maintains a book bank mainly of 11<sup>th</sup> and 12<sup>th</sup> standard text books to help
+            students belonging to
             economically and socially weaker section of the society. The Book Bank Service provides long-term lending of
             textbooks and academic materials to students for an entire semester or academic year. This service ensures
-            that all students, especially those in need, have access to essential study resources.
+            that all students, especially those in need, have access to essential study resources.<br /><br />
         </p>
-        <p>
-            <img src="./../image/photos/main-book-bank.jpg" height="300px" alt="Book Bank Photo" />
-        </p>
-
-        <p>
-        <h3><u>Who can use the Book Bank?</u></h3>
-
-        <ul>
-            <li>Registered students of the institution</li> <br />
-            <li>Priority for economically disadvantaged students (if applicable)</li> <br />
-            <li>Members with an active library membership</li> <br />
-        </ul>
-        </p>
-        <hr />
-        <p>
-        <h3><u>How It Works</u></h3>
-
-        <ol>
-            <li><b>Register for the Service:</b> Visit the library and fill out the application form. </li> <br />
-            <li><b>Submit Required Documents:</b> Student ID, proof of enrollment, and any financial aid documents (if
-                needed).</li> <br />
-            <li><b>Select Your Books:</b> Choose from the available list of textbooks and materials.</li> <br />
-            <li><b>Borrow & Use:</b> Keep the books for the entire semester.</li> <br />
-            <li><b>Return on Time:</b> Return the books in good condition at the end of the semester.</li> <br />
-        </ol>
-        <hr />
-        </p>
-        <p>
-        <h3><u>Book Bank Policies</u></h3>
-
-        <ul>
-            <li><b>Loan Duration:</b> Full semester or academic year</li> <br />
-            <li><b>Borrowing Limit:</b> Up to 4 textbooks per student</li> <br />
-            <li><b>Renewals:</b> Allowed based on availability</li> <br />
-            <li><b>Late Returns:</b> Subject to fines if not returned on time</li> <br />
-            <li><b>Book Condition:</b> Books must be returned without significant damage; lost/damaged books must be
-                compensated</li> <br />
-        </ul>
-        </p>
-        <hr />
     </div>
+    <div class="main-container-cards margin-10">
+        <div class="available-books">
+            <img src="./../image/icons/books-stack-icon.png" alt="Books Stack Icon" class="books-stack-icon" />
+            Available Books!
+        </div>
+        <div class="container-cards">
+            <div class="cards-book-bank">
+                <img src="./../image/photos/card-photo-11.png" alt="11th std photo" class="cards-photos-book-bank" />
+                <a href="./class-11.html" class="cards-book-bank-heading">
+                    <button class="cards-button">CLASS 11</button>
+                </a>
+            </div>
+            <div class="cards-book-bank">
+                <img src="./../image/photos/card-photo-12.png" alt="12th std photo" class="cards-photos-book-bank" />
+                <a href="./class-12.html" class="cards-book-bank-heading">
+                    <button class="cards-button">CLASS 12</button>
+                </a>
+            </div>
+            <div class="cards-book-bank">
+                <img src="./../image/photos/card-photo-jeeee.png" alt="JEE photo" class="cards-photos-book-bank" />
+
+                <a href="./jee.html" class="cards-book-bank-heading">
+                    <button class="cards-button">JEE Preparatory</button>
+                </a>
+            </div>
+            <div class="cards-book-bank">
+                <img src="./../image/photos/card-photo-neet.png" alt="NEET photo" class="cards-photos-book-bank" />
+                <a href="./neet.html" class="cards-book-bank-heading">
+                    <button class="cards-button">NEET Preparatory</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="Access-container">
+        <div class="question-mark-image-container">
+            <img class="question-mark-image" src="./../image/photos/how-it-works-photo.png" alt="question-mark-photo" />
+        </div>
+        <div class="how-who-container margin-10">
+            <div class="how-it-works">
+                <h2 class="subheading-book-bank"><u>How It Works</u></h2>
+                <ol>
+                    <li><b>Register for the Service:</b> Visit the library and fill out the application form. </li>
+                    <br />
+                    <li><b>Submit Required Documents:</b> Student ID, proof of enrollment, and any financial aid
+                        documents (if
+                        needed).</li> <br />
+                    <li><b>Select Your Books:</b> Choose from the available list of textbooks and materials.</li>
+                    <br />
+                    <li><b>Borrow & Use:</b> Keep the books for the entire semester.</li> <br />
+                    <li><b>Return on Time:</b> Return the books in good condition at the end of the semester.</li>
+                    <br />
+                </ol>
+            </div>
+            <div class="who-can-use">
+                <h2 class="subheading-book-bank"><u>Who can use the Book Bank?</u></h2>
+                <ul>
+                    <li>Registered students of the institution</li> <br />
+                    <li>Priority for economically disadvantaged students (if applicable)</li> <br />
+                    <li>Members (Students) with an active library membership</li> <br />
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="policy-container margin-10">
+        <div class="policy-content">
+            <h2 class="subheading-book-bank"><u>Book Bank Policies</u></h2>
+
+            <ul>
+                <li><b>Loan Duration:</b> Full semester or academic year</li> <br />
+                <li><b>Borrowing Limit:</b> Up to 4 textbooks per student</li> <br />
+                <li><b>Renewals:</b> Allowed based on availability</li> <br />
+                <li><b>Late Returns:</b> Subject to fines if not returned on time</li> <br />
+                <li><b>Book Condition:</b> Books must be returned without significant damage; lost/damaged books
+                    must be
+                    compensated</li> <br />
+            </ul>
+        </div>
+        <div class="policy-img-container">
+            <img class="policy-image" src="./../image/photos/policy.png" alt="policies photo" />
+        </div>
+    </div>
+    <hr />
+    <div class="arrows-buttons-container">
+        <a class="arrows-up-hyperlink" href="#top">
+            <img src="./../image/icons/arrow-up.png" alt="Arrow Up" class="arrows-up-icons" />
+        </a>
+    </div>
+    <script src="https://kit.fontawesome.com/40a9124f1b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
