@@ -28,9 +28,13 @@
        margin-left: 80px;
        margin-top: 20px;
        border-radius: 50px 50px 50px 50px ;
-       border-style:dashed;
+      
        border-color: #313d46;
-
+       border-style:solid;
+       box-shadow: 2px 2px 4px 4px  rgb(0, 52, 80);
+    }
+    .image:hover{
+        border-style:dashed;
     }
      .form{   
         font-size: 18px;     
@@ -40,19 +44,17 @@
         padding: 30px;
         border: 0px dashed black;
        border-radius: 100px;
-     
+       box-shadow: 6px 6px 6px 6px  rgb(0, 52, 80);
+       background-color: rgb(255, 255, 255);
        
-       background-color: #E8F8FD;
-        box-shadow: 4px 4px 4px 4px  #3674B5;
+       
+       
      }
      
      .form:hover{
-        color: #f8f8f8;
         background-color: #E8F8FD;
         box-shadow: 4px 4px 4px 4px  #3674B5;
-      
-       box-shadow: 4px 4px 4px 4px #ffffff;
-       background-color: #313d46;
+       background-color: #E8F8FD;
      }
 
      .submit-button{
@@ -71,13 +73,22 @@
      .review-div{
     background-color: rgb(228, 242, 247);
     display: flex;
-    flex-direction: row;
-    
-     
+    flex-direction: row;   
      }
-
+      
      .review-card{
-     background-color: white;
+     
+     width: 900px;
+     height: 250px;
+     margin: 20px; 
+     padding: 20px; 
+     border-radius: 10px; 
+     
+     box-shadow: 1px 1px 2px 2px  rgb(0, 52, 80);
+     background-color: rgb(255, 255, 255);
+     }
+     .review-card:hover{
+        background-color: white;
      width: 900px;
      height: 250px;
      margin: 20px; 
@@ -113,7 +124,9 @@
     height: 270px;      
     border-radius: 10px; 
  }
-   
+ .photo-div:hover{
+    box-shadow: -1px 3px 5px 5px #0488a6;
+ }  
   
 </style>
 </head>
