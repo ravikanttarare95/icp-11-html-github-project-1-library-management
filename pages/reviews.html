@@ -14,19 +14,22 @@
 
 <style>
     
-    .registration-form-div{
-       
+    .registration-form-div{      
         display: flex;
         flex-direction:row;      
     }
     .form-heading{
    height: 300px;
    width: 600px;
-  
+    
     }
     .image{
-        height:500px;
-
+        height:400px;
+       margin-left: 80px;
+       margin-top: 20px;
+       border-radius: 50px 50px 50px 50px ;
+       border-style:dashed;
+       border-color: #313d46;
 
     }
      .form{   
@@ -35,11 +38,22 @@
         width: 600px;
         text-align: center;
         padding: 30px;
-        border: 0px solid black;
-       border-radius: 10px;
-       box-shadow: 4px 4px 4px 4px  rgb(11, 142, 194);
+        border: 0px dashed black;
+       border-radius: 100px;
+     
+       
+       background-color: #E8F8FD;
+        box-shadow: 4px 4px 4px 4px  #3674B5;
      }
-
+     
+     .form:hover{
+        color: #f8f8f8;
+        background-color: #E8F8FD;
+        box-shadow: 4px 4px 4px 4px  #3674B5;
+      
+       box-shadow: 4px 4px 4px 4px #ffffff;
+       background-color: #313d46;
+     }
 
      .submit-button{
         background-color: rgb(158, 156, 164);
@@ -49,7 +63,11 @@
      .submit-button:hover{
         background-color: rgb(81, 100, 117);
      }
-
+     .customer-reviews{
+        text-align: center;
+    align-items: center;
+    color: #313d46;
+     }
      .review-div{
     background-color: rgb(228, 242, 247);
     display: flex;
@@ -69,17 +87,23 @@
      }
      .main-photo{      
      
-        text-align: center;
-        align-items: center;
+       
      }
+
  .photo-section{
   
    display: flex;
     flex-direction:row;
     padding:10px ;
     height: 330px;
+    text-align: center;
+    align-items: center;
     }
- 
+ .photo-heading{
+    text-align: center;
+    align-items: center;
+    color: #313d46;
+ }
  .photo-div{
     box-shadow: 1px 1px 2px 2px  rgb(0, 52, 80);
     background-color: rgb(255, 255, 255);
@@ -144,7 +168,10 @@
         </form>
     </div> 
     </div>
-       <br>
+    <hr>
+    <div class="customer-reviews">
+        <h1><u>Some Customer Reviews</u>  </h1> </div>
+      
     <div class="review-div">
         <div class="review-card">
             <img  src="./../image/icons/profile.png" height="50px"  />
@@ -155,7 +182,7 @@
             </a>
      </div>
 
-
+     
 
             <div class="review-card">
                 <img src="../image/icons/profile1.png" height="50px" alt="Book Lending Icon" />
