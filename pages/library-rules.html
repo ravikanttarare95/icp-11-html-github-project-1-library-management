@@ -6,33 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./../image/main-library-logo1.webp">
     <title>Library Rules</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/services.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <style>
+        .rules-image {
+            height: 300px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            box-shadow: 0 3px 5px 1px #ccc;
+        }
+        /* Mobile Device */
+        @media(max-width:600px) {
+            .rules-image {
+                height: 210px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .headings {
+                font-size: 18px;
+            }
+
+            .rules-content {
+                font-size: 12px;
+            }
+        }
+                /* Large Mobile Device */
+        @media(min-width:601px) and (max-width:768px) {
+            .headings {
+                font-size: 18px;
+            }
+
+            .rules-content {
+                font-size: 12px;
+            }
+        }
+        /* Tablet Device */
+        @media(min-width:769px) and (max-width:992px) {
+            .headings {
+                font-size: 22px;
+            }
+
+            .rules-content {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
 
 <body>
-    <h1 align="center"><img src="./../image/main-library-logo1.webp" height="70px" alt="Library Logo" /></h1>
-    <hr>
-    <h3>
-        <div align=" center">
-            &nbsp;&nbsp;&nbsp; <a href="./../index.html">Home</a> &nbsp;&nbsp;&nbsp;
-            <a href="events.html">Events</a> &nbsp;&nbsp;&nbsp;
-            <a href="catalog.html">Catalog</a> &nbsp;&nbsp;&nbsp;
-            <a href="our-services-and-facilities.html">Our Services & Facilities</a> &nbsp;&nbsp;&nbsp;
-            <a href="about-us.html">About Us</a> &nbsp;&nbsp;&nbsp;
-            <a href="reviews.html">Reviews</a> &nbsp;&nbsp;&nbsp;
-            <a href="contact-us.html">Contact Us</a> &nbsp;&nbsp;&nbsp;
-            <a href="library-rules.html">Library Rules</a> &nbsp;&nbsp;&nbsp;
+    <div class="navbar">
+        <div>
+            <img class="logo" src="./../image/main-library-logo1.webp" alt="Library Logo" />
+            <p class="library-name">SARVOTTAM <br>LIBRARY</p>
         </div>
-    </h3>
-    <hr>
+        <ul class="nav-menu-container">
+            <li><a href="./../index.html" class="nav-menu">Home</a></li>
+            <li><a href="events.html" class="nav-menu">Events</a></li>
+            <li><a href="catalog.html" class="nav-menu">Catalog</a></li>
+            <li><a href="our-services-and-facilities.html" class="nav-menu">Services &
+                    Facilities</a></li>
+            <li><a href="about-us.html" class="nav-menu">About Us</a></li>
+            <li><a href="reviews.html" class="nav-menu">Reviews</a></li>
+            <li><a href="contact-us.html" class="nav-menu">Contact Us</a></li>
+            <li><a href="library-rules.html" class="nav-menu selected-nav-menu">Library Rules</a></li>
+            <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
+        </ul>
+    </div>
     <div>
-        <P>
-            <img src="./../image/photos/main-library-rules.jpg" height="300px" alt="Main Photo for Library Rules" />
+        <P class="imm">
+            <img src="./../image/photos/main-library-rules.jpg" class="rules-image"
+                alt="Main Photo for Library Rules" />
         </P>
+        <img src="./../image/Icons/rules.png" height="35px" alt="Main Photo for Library Rules"
+            class="icons-left-to-headings" />
+        <h1 class="headings">GENERAL RULES </h1>
 
-        <h2>GENERAL RULES <img src="./../image/Icons/rules.png" height="35px" alt="Main Photo for Library Rules" /></h2>
-
-        <ol type="1" start="1">
+        <ol type="1" start="1" class="rules-content">
             <li>Noise, disturbance or unruly behaviour is forbidden in any part of the library.</li><br />
             <li>Smoking, food and drinks are not allowed in the library.</li><br />
             <li>Silence shall be observed in the public areas of the library. Mobile phones, and watch alarms should be

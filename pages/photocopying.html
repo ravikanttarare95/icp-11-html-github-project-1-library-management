@@ -6,39 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image/main-library-logo1.webp">
     <title>Photocopying</title>
-    <link rel="stylesheet" href="./../services-style.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/services.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <style>
-        .logo {
-            border-radius: 50%;
-            display: block;
-            margin: auto;
+        .Photocopying-img {
+            width: 400px;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 1px #ccc;
         }
+
+        .photocopying-content {
+            font-size: 16px;
+        }
+
+        /* Mobile Device */
+        @media (max-width:600px) {
+            h1 {
+                font-size: 18px;
+            }
+
+            .Photocopying-img {
+                width: 350px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .photocopying-content {
+                font-size: 14px;
+            }
+        }
+
+        /* Large Mobile Device */
+        @media (min-width:601px) and (max-width:768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .Photocopying-img {
+                width: 370px;
+            }
+
+            .photocopying-content {
+                font-size: 15px;
+            }
+        }
+
+        /* Tablets Device */
+        @media (min-width:769px) and (max-width:992px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .Photocopying-img {
+                width: 380px;
+            }
+
+            .photocopying-content {
+                font-size: 15px;
+            }
+        }
+
+        /* Laptop Device */
+        @media (min-width:993px) and (max-width:1024px) {
+            .Photocopying-img {
+                width: 390px;
+            }
+        }
+
+        /* Desktop Device */
+        @media (min-width:1025px) {}
     </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
 
 <body>
-    <img class="logo" src="./../image/main-library-logo1.webp" height="70px" alt="Library Logo" />
-    <div>
+    <div class="navbar">
+        <div>
+            <img class="logo" src="./../image/main-library-logo1.webp" height="50px" alt="Library Logo" />
+        </div>
+        <ul class="nav-menu-container">
+            <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li><a href="./book-lending.html" class="nav-menu">Book Lending</a></li>
+            <li><a href="./membership.html" class="nav-menu">Membership</a></li>
+            <li><a href="./book-bank.html" class="nav-menu">Book Bank</a></li>
+            <li><a href="./photocopying.html" class="nav-menu selected-nav-menu">Photocopying</a></li>
+            <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
+        </ul>
+    </div>
+    <div class="heading-container">
+        <img src="./../image/Icons/photocopying.png" height="40px" alt="Printer Icon" class="icons-left-to-headings" />
+        <h1 class="headings">PHOTOCOPYING </h1>
+    </div>
 
-        <h2>PHOTOCOPYING <img src="./../image/Icons/photocopying.png" height="40px" alt="Printer Icon" /></h2>
+    <img class="Photocopying-img" src="./../image/photos/main-photocopying.jpg" alt="Photocopy Machine Photo" />
 
-        <img src="./../image/photos/main-photocopying.jpg" height="300px" alt="Photocopy Machine Photo" />
-        <br />
-        <p>
+    <div class="photocopying-content">
         <ul>
-            <li>Our Library offers photocopyingervice to all its members, walk-in users and others.</li><br />
+            <li>Our Library offers photocopying service to all its members, walk-in users and others.</li><br />
             <li>Only single copy of journal articles and book chapters are provided for private study and research
                 purpose.</li><br />
-            <li>Photo Copy Charges are as follows:</li><br />
+            <li>Photo Copy Charges(per page) are as follows:</li><br />
             <ul type="circle">
                 <li><u>Black & White Photocopy:</u> ₹0.50 for library members & ₹1.00 for others </li><br />
                 <li><u>Colour Photocopy:</u> ₹5 for library members & ₹10 for others</li><br />
-
             </ul>
         </ul>
-        </p>
     </div>
+    <script src="https://kit.fontawesome.com/40a9124f1b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
