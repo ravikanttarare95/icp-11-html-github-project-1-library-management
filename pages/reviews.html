@@ -4,8 +4,9 @@
 
 <head>
     <title>Reviews</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image/main-library-logo1.webp">
-
     <link rel="stylesheet" href="./../css/style.css" />
     <link rel="stylesheet" href="./../services-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,7 +102,7 @@
    display: flex;
     flex-direction:row;
     padding:10px ;
-    height: 330px;
+   
     text-align: center;
     align-items: center;
     }
@@ -123,7 +124,60 @@
     box-shadow: -1px 3px 5px 5px #0488a6;
     color: #007ad7;
  }  
- 
+ /* Mobile Device */
+ @media (max-width:600px) {
+    .image{
+        height:300px;
+       margin-left: 150px;
+      
+    }
+    .form{  
+        height:350px;
+        font-size: 18px;     
+        width: 300px;
+        text-align: center;        
+     }  
+     .registration-form-div{ 
+        background-color: rgb(228, 242, 247);     
+        display: flex;
+        flex-direction:column;  
+      align-items: center;  
+   
+    } 
+    .heading-paragraph{
+        font-size: 15px;
+        width: 500px;
+    }
+    .heading-color{      
+      font-size: 21px; 
+  }
+  .review-div{
+    background-color: rgb(228, 242, 247);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+     }
+     .review-card{
+     width: 300px;
+    
+     }
+    .photo-section{ 
+   display: flex;
+    flex-direction:column;
+    background-color: rgb(228, 242, 247);
+    }
+
+ }
+
+ /* All Mobile Devices */
+ @media(max-width:768px) {
+
+ }
+  /* Large Mobile Device */
+  @media (min-width:601px) and (max-width:768px) {
+
+  }
+            
 </style>
 </head>
 
@@ -149,7 +203,7 @@
 
     <div class="first-heading">
     <h2 class="heading-color"><img height="50px" src="../image/icons/cv.png"><u>Customer Reviews :</u><i> What our customers says ?</i></h2>
-    <h3 class="heading-color">User reviews, comprising feedback and ratings from consumers, greatly influence buying decisions. They provide realistic insights, build trust, enhance customer experience, and boost brand reputation.</h3>
+    <h3 class="heading-paragraph">User reviews, comprising feedback and ratings from consumers, greatly influence buying decisions. They provide realistic insights, build trust, enhance customer experience, and boost brand reputation.</h3>
     </div>
 
     <div class="registration-form-div">
@@ -252,7 +306,7 @@
     <h2><i>Photocopying</i></h2>
 </div>
 </div>
-</div>
+
 
 
 <!-- only footer is ramining -->
