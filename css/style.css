@@ -96,9 +96,9 @@ footer a {
 
 /* Mobile Devices */
 @media (max-width: 600px) {
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
   .logo {
     height: 60px;
   }
@@ -110,9 +110,9 @@ footer a {
 
 /* Large Mobile Devices */
 @media (min-width: 601px) and (max-width: 768px) {
-  body {
+  /* body {
     background-color: tomato;
-  }
+  } */
   .logo {
     height: 60px;
   }
@@ -124,9 +124,9 @@ footer a {
 
 /* Tablet Devices */
 @media (min-width: 769px) and (max-width: 992px) {
-  body {
+  /* body {
     background-color: blue;
-  }
+  } */
   .logo {
     height: 60px;
   }
@@ -138,9 +138,9 @@ footer a {
 
 /* Laptop Devices */
 @media (min-width: 993px) and (max-width: 1024px) {
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
   .logo {
     height: 60px;
   }
