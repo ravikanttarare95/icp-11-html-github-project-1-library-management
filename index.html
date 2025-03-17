@@ -1,43 +1,65 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Sarvottam Library</title>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image/main-library-logo1.webp">
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+
+            
 
 </head>
+<style>
+ 
+    #goToTopBtn {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+    }
 
-<body>
+    #goToTopBtn:hover {
+        background-color: #333;
+    }
+    
+</style>
 
-    <h1 align="center">
-        <img src="image/main-library-logo1.webp" alt="library logo" height="70">
-    </h1>
-    <nav>
-        <hr>
-        <h3>
-
-            <div align="center">
-                <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/events.html">Events</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/catalog.html">Catalog</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/our-services-and-facilities.html">Our Services & Facilities</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/about-us.html">About Us</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/reviews.html">Reviews</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/contact-us.html">Contact Us</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/library-rules.html">Library Rules</a>
-
-        </h3>
-
-        <hr>
-    </nav>
+<body style="background-color: antiquewhite;">
+    <div class="navbar">
+        <div>
+            <img class="logo" src="./../image/main-library-logo1.webp" alt="Library Logo" />
+            <p class="library-name">SARVOTTAM <br>LIBRARY</p>
+        </div>
+        <ul class="nav-menu-container">
+            <li><a href="./../index.html" class="nav-menu selected-nav-menu">Home</a></li>
+            <li><a href="./pages/events.html" class="nav-menu">Events</a></li>
+            <li><a href="./pages/catalog.html" class="nav-menu">Catalog</a></li>
+            <li><a href="./pages/our-services-and-facilities.html" class="nav-menu">Services &
+                    Facilities</a></li>
+            <li><a href="./pages/about-us.html" class="nav-menu">About Us</a></li>
+            <li><a href="./pages/reviews.html" class="nav-menu">Reviews</a></li>
+            <li><a href="./pages/contact-us.html" class="nav-menu">Contact US</a></li>
+            <li><a href="./pages/library-rules.html" class="nav-menu">Library Rules</a></li>
+            <li><img class="nav-menu-icon" src="./image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
+        </ul>
     </div>
 
     <div align="center">
-        <h2> <i><b>
-                    <p>Welcome to our Sarvottam Library! Explore a wide collection of books, attend exciting events, and
-                        enjoy
-                        our premium services.</p>
-                </b></i></h2>
+        <h3> <i><b style="color: red;">
+                    <font size="5">
+                        <p>Welcome to our Library! Explore a wide collection of books, attend exciting events, and enjoy
+                            our premium services.</p>
+                    </font>
+                </b></i></h3>
         <img src="home-assets/real-library.jpg" width="700" alt="Library Image">
 
     </div>
@@ -46,13 +68,14 @@
 
         <p>Check out the latest arrivals and most borrowed books! <a href="pages/catalog.html">Know More.</a></p>
         <table border="1" width="100%">
-            <tr>
-
-                <th>Categories</th>
-                <th>Available Books</th>
-                <th>Popular Titles</th>
+           <th> <tr>
+                <th style="background-color: palegoldenrod;">Categories</th>
+                <th style="background-color: palegreen;">Available Books</th>
+                <th style="background-color: skyblue;">Popular Titles</th>
             </tr>
+            </th>
             <tr>
+            
                 <td>Science Fiction</td>
                 <td>150</td>
                 <td>Dune, The Martian, Foundation</td>
@@ -133,6 +156,14 @@
         </ul>
     </div>
     <hr>
+    <div align="center" style="background-color: paleturquoise;">
+        <img src="home-assets/clock.png" alt="clock icon" height="35px">
+        <h2> Library Timings</h2>
+        <p><b>Monday - Friday:</b> 9:00 AM - 8:00 PM</p>
+        <p><b>Saturday:</b> 10:00 AM - 6:00 PM</p>
+        <p><b>Sunday:</b> Closed</p>
+    </div>
+    <hr>
 
     <div align="center">
         <h2> <img src="home-assets/map.png" alt="map icon" height="40px"> Our Location</h2>
@@ -143,18 +174,18 @@
     </div>
     <hr>
 
-    <div align="center">
-        <img src="home-assets/clock.png" alt="clock icon" height="35px">
-        <h2> Library Timings</h2>
-        <p><b>Monday - Friday:</b> 9:00 AM - 8:00 PM</p>
-        <p><b>Saturday:</b> 10:00 AM - 6:00 PM</p>
-        <p><b>Sunday:</b> Closed</p>
-    </div>
+
     <hr>
     <div align="center">
         <h2> <img src="home-assets/log-in.png" alt="user icon" height="35px"> Member Login</h2>
         <p>Access your account to manage books and reservations.</p>
         <a href="pages/account.html" target="_blank"><b>LOG IN</b></a>
+        <br><br>
+
+    <div align="center">
+
+            <a href="#top" id="goToTopBtn" title="Go to top">↑</a>
+    </div>
 </body>
 
 </html>
