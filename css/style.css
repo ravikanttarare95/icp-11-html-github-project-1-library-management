@@ -63,6 +63,36 @@ body {
 .nav-menu-icon {
   height: 25px;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #313d46;
+  color: #fff;
+}
+
+.footer-heading {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.time-contact {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-icon {
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 
 /* Mobile Devices */
 @media (max-width: 600px) {
