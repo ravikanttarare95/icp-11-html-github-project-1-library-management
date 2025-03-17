@@ -1,7 +1,20 @@
-.space-right-icon {
-  margin-right: 10px;
+.heading-container {
+margin: 10px 0;
 }
-.main-heading {
+h1 {
+  font-size: 24px;
+  color: #313d46;
+  font-family: Aclonica;
+}
+h2 {
+  font-size: 20px;
+  color: #3674b5;
+}
+.icons-left-to-headings {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.headings {
   display: inline-block;
   vertical-align: middle;
 }
@@ -44,10 +57,13 @@
 .button-previous {
   margin-right: auto;
 }
-.arrows-up-icons {
-  height: 35px;
+.arrows-up-hyperlink{
+  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.arrows-up-icons {
+  height: 35px;
 }
 
 .button-next {

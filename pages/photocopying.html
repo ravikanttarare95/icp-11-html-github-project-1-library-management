@@ -8,9 +8,14 @@
     <title>Photocopying</title>
     <link rel="stylesheet" href="./../css/style.css" />
     <link rel="stylesheet" href="./../css/services.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <style>
         .Photocopying-img {
             width: 400px;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 1px #ccc;
         }
 
         .photocopying-content {
@@ -24,7 +29,10 @@
             }
 
             .Photocopying-img {
-                width: 360px;
+                width: 350px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .photocopying-content {
@@ -64,19 +72,13 @@
 
         /* Laptop Device */
         @media (min-width:993px) and (max-width:1024px) {
-            h1 {
-                font-size: 24px;
-            }
             .Photocopying-img {
                 width: 390px;
             }
         }
-              /* Desktop Device */
-              @media (min-width:1025px) {
-                h1 {
-                font-size: 26px;
-            }
-        }
+
+        /* Desktop Device */
+        @media (min-width:1025px) {}
     </style>
 </head>
 <!-- Ravikant Tarare is working on this page -->
@@ -87,23 +89,22 @@
             <img class="logo" src="./../image/main-library-logo1.webp" height="50px" alt="Library Logo" />
         </div>
         <ul class="nav-menu-container">
-            <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+            <li><a href="./../index.html" class="nav-menu"><i class="fa-solid fa-house"></i></a>
             </li>
-            <li><a href="./book-lending.html" class="nav-menu">BOOK LENDING</a></li>
-            <li><a href="./membership.html" class="nav-menu">MEMBERSHIP</a></li>
-            <li><a href="./book-bank.html" class="nav-menu">BOOK BANK</a></li>
-            <li><a href="./photocopying.html" class="nav-menu selected-nav-menu">PHOTOCOPYING</a></li>
+            <li><a href="./book-lending.html" class="nav-menu">Book Lending</a></li>
+            <li><a href="./membership.html" class="nav-menu">Membership</a></li>
+            <li><a href="./book-bank.html" class="nav-menu">Book Bank</a></li>
+            <li><a href="./photocopying.html" class="nav-menu selected-nav-menu">Photocopying</a></li>
             <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
         </ul>
     </div>
-    <div>
-        <img src="./../image/Icons/photocopying.png" height="40px" alt="Printer Icon"
-            class="main-heading space-right-icon" />
-        <h1 class="main-heading">PHOTOCOPYING </h1>
+    <div class="heading-container">
+        <img src="./../image/Icons/photocopying.png" height="40px" alt="Printer Icon" class="icons-left-to-headings" />
+        <h1 class="headings">PHOTOCOPYING </h1>
     </div>
-    <div class="Photocopying-img-container">
-        <img class="Photocopying-img" src="./../image/photos/main-photocopying.jpg" alt="Photocopy Machine Photo" />
-    </div>
+
+    <img class="Photocopying-img" src="./../image/photos/main-photocopying.jpg" alt="Photocopy Machine Photo" />
+
     <div class="photocopying-content">
         <ul>
             <li>Our Library offers photocopying service to all its members, walk-in users and others.</li><br />
