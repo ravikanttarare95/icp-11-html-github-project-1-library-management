@@ -1,9 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./../image/main-library-logo1.webp">
     <title>CONTACT PAGE </title>
-    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Zilla+Slab+Highlight:wght@400;700&display=swap" rel="stylesheet">
+     
+    <style>
+     .contact-container{
+        background-color: #E8F8FD;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        min-width: none;
+        max-width: 500px;
+        box-sizing: border-box;
+     }
+     h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    }
+    .zilla-slab-highlight-regular {
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+    label {
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #555;
+    }
+    input, textarea {
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        transition: border 0.3s ease;
+    }
+    .submit-btn {
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        text-align: center;
+        background-color: #619adb;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .submit-btn:hover {
+    background-color: #4a8ddf;
+}
+.submit-btn:active {
+    background-color: #84bae5;
+}
+        </style>
+    <link rel="stylesheet" href="./../css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
@@ -18,26 +85,24 @@
             <li><a href="./../index.html" class="nav-menu">Home</a></li>
             <li><a href="events.html" class="nav-menu">Events</a></li>
             <li><a href="catalog.html" class="nav-menu">Catalog</a></li>
-            <li><a href="our-services-and-facilities.html" class="nav-menu ">Services &
-                    Facilities</a></li>
+            <li><a href="our-services-and-facilities.html" class="nav-menu ">Services & Facilities</a></li>
             <li><a href="about-us.html" class="nav-menu">About Us</a></li>
             <li><a href="reviews.html" class="nav-menu">Reviews</a></li>
-            <li><a href="contact-us.html" class="nav-menu selected-nav-menu">Contact Us</a></li>
+            <li><a href="contact-us.html" class="nav-menu selected-nav-menu"><b>Contact Us</b></a></li>
             <li><a href="library-rules.html" class="nav-menu">Library Rules</a></li>
             <li><img class="nav-menu-icon" src="./../image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
         </ul>
-    </div>
-    
-    <h1>CONTACT FORM  </h1>
+</div>
+<div class="contact-container">
+    <h1 class="zilla-slab-highlight-regular">CONTACT FORM </h1>
     <div>
-        <p >
-            <img src="./../image/icons/customer-service.png" height="100px" />
-            <h2>Get in Touch</h2>
-        </p>
-         </div>
-         <form>
+     <p align="center"><img src="./../image/icons/customer-service.png" height="100px" alt="customer-service"/>
+         <h2>Get in Touch</h2>
+     </p>
+      </div>
+         <form class="contact-form" >
             <label for="inputfullname" > Your Name:</label>&nbsp;&nbsp;
-                   <input type="text" id="inputnumber" placeholder="Enter your name" required/>
+                   <input type="text" id="inputfullname" placeholder="Enter your name" required/>
                    <br>
                    <br>
              <label for="inputnumber"> Phone No:</label>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -54,7 +119,7 @@
                    <textarea id="message"  rows="5" placeholder="Write your message" required></textarea>
                    <br>
                    <br>
-                   <button type="submit">Send Message</button>
+                   <button type="submit" class="submit-btn">Send Message</button>
             
                 </form>
                 <br>
