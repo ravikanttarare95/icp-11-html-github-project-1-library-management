@@ -4,46 +4,46 @@
 <head>
     <title>Sarvottam Library</title>
     <link rel="icon" href="image/main-library-logo1.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <style>
+ 
         #goToTopBtn {
-            background-color: black; 
-            color: white; 
+            background-color: black;
+            color: white;
             padding: 10px 20px;
-            border-radius: 5px; 
-            text-decoration: none; 
-            font-size: 16px; 
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
         }
-    
-        #goToTopBtn:hover {
-            background-color: #333; 
-        }
-    </style>
 
+        #goToTopBtn:hover {
+            background-color: #333;
+        }
+        
+</style>
 </head>
 
 <body style="background-color: antiquewhite;">
-
-    <h1 align="center">
-        <img src="image/main-library-logo1.webp" alt="library logo" height="70">
-    </h1>
-    <nav>
-        <hr>
-        <h3>
-
-            <div align="center">
-                <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/events.html">Events</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/catalog.html">Catalog</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/our-services-and-facilities.html">Our Services & Facilities</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/about-us.html">About Us</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/reviews.html">Reviews</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/contact-us.html">Contact Us</a> &nbsp;&nbsp;&nbsp;
-                <a href="pages/library-rules.html">Library Rules</a>
-
-        </h3>
-
-        <hr>
-    </nav>
+  
+    <div class="navbar">
+        <div>
+            <img class="logo" src="image/main-library-logo1.webp" alt="Library Logo" />
+            <p class="library-name">SARVOTTAM <br>LIBRARY</p>
+        </div>
+        <ul class="nav-menu-container">
+            <li><a href="index.html" class="nav-menu selected-nav-menu">Home</a></li>
+            <li><a href="pages/events.html" class="nav-menu">Events</a></li>
+            <li><a href="pages/catalog.html" class="nav-menu">Catalog</a></li>
+            <li><a href="pages/our-services-and-facilities.html" class="nav-menu">Services & Facilities</a></li>
+            <li><a href="pages/about-us.html" class="nav-menu">About Us</a></li>
+            <li><a href="pages/reviews.html" class="nav-menu">Reviews</a></li>
+            <li><a href="pages/contact-us.html" class="nav-menu">Contact Us</a></li>
+            <li><a href="pages/library-rules.html" class="nav-menu">Library Rules</a></li>
+            <li><img class="nav-menu-icon" src="image/icons/nav-menu-icon.png" alt="Menu Icon"></li>
+        </ul>
     </div>
 
     <div align="center">
@@ -61,11 +61,12 @@
 
         <p>Check out the latest arrivals and most borrowed books! <a href="pages/catalog.html">Know More.</a></p>
         <table border="1" width="100%">
-            <tr>
+           <th> <tr>
                 <th style="background-color: palegoldenrod;">Categories</th>
                 <th style="background-color: palegreen;">Available Books</th>
                 <th style="background-color: skyblue;">Popular Titles</th>
             </tr>
+            </th>
             <tr>
             
                 <td>Science Fiction</td>
@@ -147,6 +148,7 @@
             <p>Our support team is always ready to assist you.</p>
         </ul>
     </div>
+    <hr>
     <div align="center" style="background-color: paleturquoise;">
         <img src="home-assets/clock.png" alt="clock icon" height="35px">
         <h2> Library Timings</h2>
