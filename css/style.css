@@ -63,12 +63,45 @@ body {
 .nav-menu-icon {
   height: 25px;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #313d46;
+  color: #fff;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-heading {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.time-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-icon {
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 
 /* Mobile Devices */
 @media (max-width: 600px) {
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
   .logo {
     height: 60px;
   }
@@ -80,9 +113,9 @@ body {
 
 /* Large Mobile Devices */
 @media (min-width: 601px) and (max-width: 768px) {
-  body {
+  /* body {
     background-color: tomato;
-  }
+  } */
   .logo {
     height: 60px;
   }
@@ -94,9 +127,9 @@ body {
 
 /* Tablet Devices */
 @media (min-width: 769px) and (max-width: 992px) {
-  body {
+  /* body {
     background-color: blue;
-  }
+  } */
   .logo {
     height: 60px;
   }
@@ -108,9 +141,9 @@ body {
 
 /* Laptop Devices */
 @media (min-width: 993px) and (max-width: 1024px) {
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
   .logo {
     height: 60px;
   }

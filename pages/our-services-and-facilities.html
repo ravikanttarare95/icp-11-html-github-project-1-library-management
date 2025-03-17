@@ -116,7 +116,8 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        .video{
+
+        .video {
             margin: 10px;
             height: 200px;
             width: 400px;
@@ -253,17 +254,17 @@
 
         /* Laptop Devices */
         @media (min-width: 993px) and (max-width: 1024px) {
-            body {
+            /* body {
                 background-color: silver;
-            }
+            } */
 
         }
 
         /* Desktop Devices */
         @media (min-width: 1025px) {
-            body {
+            /* body {
                 background-color: beige;
-            }
+            } */
         }
     </style>
 </head>
@@ -374,18 +375,13 @@
     <hr />
     <div class="videos-container">
 
-        <video controls poster="./../videos/library-advantages.webp" class="video" >
-            <source src="./../videos/library-benifits.mp4" type="video/mp4"/>
+        <video controls poster="./../videos/library-advantages.webp" class="video">
+            <source src="./../videos/library-benifits.mp4" type="video/mp4" />
         </video>
 
-        <iframe  poster="./../videos/library-advantages.webp" width="560" height="315" src="https://www.youtube.com/embed/a0pj1DpR8vM?si=RaB-gNMTba7Jm9JT"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video">
-        </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/s00_GYIRZjI?si=4eMZMRJAlTTZa0Va"
-            title="YouTube video player" frameborder="0"
+        <iframe poster="./../videos/library-advantages.webp" width="560" height="315"
+            src="https://www.youtube.com/embed/a0pj1DpR8vM?si=RaB-gNMTba7Jm9JT" title="YouTube video player"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video">
         </iframe>
@@ -413,6 +409,28 @@
             </button>
         </a>
     </div>
+    <footer>
+        <div class="time-contact">
+            <div>
+                <p class="footer-heading">Library Timings <img class="footer-icon" src="./../image/icons/clock.png"
+                        alt="clock"></p>
+                <p>Monday: Friday: 9:00 AM - 8:00 PM</p>
+                <p>Saturday: 10:00 AM - 6:00 PM</p>
+                <p>Sunday: Closed <img class="footer-icon" src="./../image/icons/lock.png" alt="Lock"></p>
+            </div>
+            <div>
+                <p class="footer-heading">Contact Us</p>
+                <p><img class="footer-icon" src="./../image/icons/call.png" alt="call"> <a
+                        href="tel:8275957698">8275957698</a></p>
+                <p><img class="footer-icon" src="./../image/icons/mail-footer.png" alt="mail"><a
+                        href="mailto:ravikanttarare2001@gmail.com">ravikanttarare2001@gmail.com</a></p>
+            </div>
+        </div>
+        <div>Copyright © SARVOTTAM LIBRARY 2025</div>
+    </footer>
+    <style>
+
+    </style>
 </body>
 
 </html>
