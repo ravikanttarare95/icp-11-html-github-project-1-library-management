@@ -52,6 +52,11 @@
             gap: 30px;
         }
 
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }
+
         /* Mobile Device */
         @media(max-width:600px) {
             .membership-main-image {
@@ -60,7 +65,8 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            #intro-membership{
+
+            #intro-membership {
                 text-align: center;
             }
         }
@@ -191,6 +197,11 @@ background-color: #E8F8FD;-->
         </form>
     </div>
     <br />
+    <div class="video-container">
+        <video controls poster="./../videos/library-advantages.webp" class="video" height="300px" width="500px">
+            <source src="./../videos/library-benifits.mp4" type="video/mp4" />
+        </video>
+    </div>
     <hr />
     <div class="arrows-buttons-container">
         <a class="arrows-up-hyperlink" href="#top">

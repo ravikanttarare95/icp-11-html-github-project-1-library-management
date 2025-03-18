@@ -90,7 +90,11 @@ footer a {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
+.foot-CT {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
 .footer-icon {
   height: 20px;
   vertical-align: middle;
@@ -108,6 +112,15 @@ footer a {
 
   .nav-menu {
     display: none;
+  }
+  .time-contact {
+    flex-direction: column;
+  }
+  .foot-CT {
+    align-items: center;
+  }
+  .footer-copyright {
+    text-align: center;
   }
 }
 
