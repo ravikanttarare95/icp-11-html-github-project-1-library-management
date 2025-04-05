@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
+  -webkit-text-size-adjust: 100%; /* point to Remember */
 }
+
 .logo {
   border: 1px solid #e8f8fd;
   border-radius: 50%;
@@ -10,6 +12,7 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
+
 .library-name {
   color: #ffffff;
   font-family: Aclonica;
@@ -53,16 +56,20 @@ body {
 .nav-menu:hover {
   color: yellow;
 }
+
 .selected-nav-menu {
   color: #ffffff;
   border-bottom: 2px solid #ffffff;
 }
+
 .selected-nav-menu:hover {
   border-bottom: 2px solid yellow;
 }
+
 .nav-menu-icon {
   height: 25px;
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -90,11 +97,13 @@ footer a {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .foot-CT {
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
+
 .footer-icon {
   height: 20px;
   vertical-align: middle;
@@ -113,12 +122,15 @@ footer a {
   .nav-menu {
     display: none;
   }
+  
   .time-contact {
     flex-direction: column;
   }
+  
   .foot-CT {
     align-items: center;
   }
+  
   .footer-copyright {
     text-align: center;
   }
